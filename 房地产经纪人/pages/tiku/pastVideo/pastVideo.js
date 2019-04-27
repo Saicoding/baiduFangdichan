@@ -1,0 +1,58 @@
+// pages/video/videoDetail/videoDetail.js
+const API_URL = 'https://xcx2.chinaplat.com/'; //接口地址
+const app = getApp();
+
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {},
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    app.setPageInfo();
+    swan.setNavigationBarTitle({ //设置标题
+      title: options.title
+    });
+    //获取是否有登录权限
+    let self = this;
+    let videourl = options.videourl;
+    console.log(videourl);
+    self.setData({
+      videourl: videourl
+    });
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+    this.videoContext = swan.createVideoContext('myVideo');
+    this.videoContext.requestFullScreen({});
+  },
+  /**
+  * 用户点击右上角分享
+  */
+  onShareAppMessage: function () {},
+
+  /**
+   * 全屏状态改变时
+   */
+  bindfullscreenchange: function (e) {
+    console.log(e.detail);
+    let fullScreen = e.detail.fullScreen;
+
+    if (!fullScreen) {
+      swan.navigateBack({});
+    }
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {}
+
+});

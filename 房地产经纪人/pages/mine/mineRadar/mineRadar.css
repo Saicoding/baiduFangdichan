@@ -1,0 +1,119 @@
+
+.mycontainer {
+  
+}
+
+.up {
+  background: #2983fe;
+  width: 100%;
+  height: 400rpx;
+  color: white;
+  padding-top: 30rpx;
+  position: relative;
+  align-items: center;
+  z-index: 0;
+}
+
+.pic-container {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 200rpx;
+  margin: 0 auto;
+}
+
+.up-backimg1 {
+    position: absolute;
+    left: 24rpx;
+    bottom: 0;
+    width: 702rpx;
+    height: 114rpx;
+    z-index: 10;
+    opacity: 0.1;
+}
+
+.up-backimg2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20rpx;
+    z-index: 10000;
+}
+
+.pic {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 200rpx;
+}
+
+.nickname {
+  font-size: 50rpx;
+  width: 100%;
+  text-align: center;
+  margin-top: 25rpx;
+  letter-spacing: 8rpx;
+}
+
+.rate {
+  font-size: 35rpx;
+  width: 100%;
+  text-align: center;
+  margin-top: 50rpx;
+  letter-spacing: 4rpx;
+}
+
+.down {
+}
+
+.radarContainer {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top:10rpx;
+}
+
+.radarCanvas {
+  clear: both;
+  width: 700rpx;
+  height: 600rpx;
+  margin: 0rpx auto;
+}
+
+.loading-img{
+  display: block;
+  width: 118rpx;
+  height:150rpx;
+  margin:300rpx auto;
+}
+
+.time-icon,.time-text{
+  display: float;
+  float:left;
+}
+
+.changeType{
+  width:100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 30rpx;
+  padding-right: 20rpx;
+  border-bottom: 1px #cecece solid;
+  box-shadow: rgb(211, 206, 206) 3rpx 3rpx 8rpx 1rpx ;
+}
+
+.time-icon{
+  width:40rpx;
+  height:40rpx;
+  margin-top:30rpx;
+  margin-left:25rpx;
+}
+
+.tui-picker-detail{
+  margin-left:90rpx;
+  line-height: 100rpx;
+}
+
+

@@ -1,0 +1,20 @@
+<view class="container">
+  <view style = "margin-top:30rpx;">
+	<view data-value="A" class="imgAndText" style="{{shiti.style}}" bindtap="_answerSelect">
+		<image class="icon" src="{{shiti.srcs.A}}" mode="aspectFit"></image>
+		<view class="answer-text">{{shiti.A}}</view>
+	</view>
+	<view data-value="B" class="imgAndText" style="{{shiti.style}}" bindtap="_answerSelect">
+		<image src="{{shiti.srcs.B}}" mode="aspectFit" class="icon"></image>
+		<view class="answer-text">{{shiti.B}}</view>
+	</view>
+	<view data-value="C" class="imgAndText" style="{{shiti.style}}" bindtap="_answerSelect">
+		<image src="{{shiti.srcs.C}}" mode="aspectFit" class="icon"></image>
+		<view class="answer-text">{{shiti.C}}</view>
+	</view>
+	<view data-value="D" class="imgAndText" style="{{shiti.style}}" bindtap="_answerSelect">
+		<image src="{{shiti.srcs.D}}" mode="aspectFit" class="icon"></image>
+		<view class="answer-text">{{shiti.D}}</view>
+	</view>
+  </view>
+</view>

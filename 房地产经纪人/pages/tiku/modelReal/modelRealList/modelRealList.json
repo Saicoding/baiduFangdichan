@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "has-no-page": "/components/hasNoPage/hasNoPage"
+  }
+}

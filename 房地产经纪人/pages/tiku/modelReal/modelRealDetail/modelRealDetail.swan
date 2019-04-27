@@ -1,0 +1,75 @@
+<!--pages/tiku/zuoti/index.wxml-->
+<swiper s-if="isLoaded" duration="200" current="{{myCurrent}}" circular="{{circular}}" skip-hidden-item-layout="true" class="swiper" bindchange="sliderChange">
+  <block s-for="shiti, index in sliderShitiArray" s-key="ti">
+    <swiper-item>
+      <scroll-view scroll-y style="height:{{windowHeight-85}}rpx;" catchlongtap='_toogleMarkAnswer'>
+        <view style="border:1rpx solid white;padding-bottom:50rpx;">
+          <!--问题-->
+          <question bindtoogleAnimation="_toogleAnimation" isModelReal="true" id="q{{shiti.px}}" num_color="{{shiti.num_color}}" px="{{shiti.px}}" tx="{{shiti.tx}}" question="{{shiti.question}}"></question>
+          <!--单选题-->
+          <view style="margin-botoom:50rpx;" s-if="shiti.TX == 1">
+            <singleselect shiti="{{shiti}}" checked="{{checked}}" bindanswerSelect="_answerSelect"> </singleselect>
+            <!-- 解析 -->
+            <jiexi isModelReal="{{true}}" answer="{{shiti.answer}}" isAnswer="{{isSubmit}}" jiexi="{{shiti.jiexi}}"></jiexi>
+          </view>
+
+          <!--多选题-->
+          <view style="margin-botoom:50rpx;" s-if="shiti.TX ==2">
+
+            <multiselect shiti="{{shiti}}" checked="{{checked}}" bindcheckVal="_answerSelect"></multiselect>
+            <!-- 解析 -->
+            <jiexi isModelReal="{{true}}" answer="{{shiti.answer}}" isAnswer="{{isSubmit}}" jiexi="{{shiti.jiexi}}"></jiexi>
+          </view>
+
+          <!--材料题-->
+          <view style="margin-botoom:50rpx;" s-if="shiti.TX == 99">
+            <view s-if="!shiti.confirm&&!isSubmit" class="cailiaoZuoti">
+              <button class="cailiaoZuoti-btn" bindtap='CLZuoti'>答题</button>
+            </view>
+            <!-- 材料题小题的滑动框 -->
+            <view s-if="shiti.confirm || isSubmit">
+              <swiper current="{{xiaotiCurrent}}" indicator-dots vertical="true" skip-hidden-item-layout="true" class="swiper-xiaoti" style="height:{{windowHeight-230}}rpx;" bindchange="xiaotiSliderChange" indicator-active-color="#1d9bf7">
+                <block s-for="xiaoti, index in shiti.xiaoti" s-key="ti">
+                  <swiper-item>
+                    <view id="h{{xiaoti.id}}">
+                      <!--问题-->
+                      <question class="question" num_color="{{xiaoti.num_color}}" px="{{xiaoti.px}}" tx="{{xiaoti.tx}}" question="{{xiaoti.question}}"></question>
+
+                      <!--单选题-->
+                      <view s-if="xiaoti.TX == 1">
+                        <singleselect data-px="{{xiaoti.px}}" shiti="{{xiaoti}}" checked="{{checked}}" bindanswerSelect="_CLAnswerSelect"> </singleselect>
+                        <view data-answer="{{xiaoti.answer}}" data-jiexi="{{xiaoti.jiexi}}" s-if="isSubmit" class="viewJiexi" bindtap="viewJiexi" hover-class='select1' hover-stay-time='500'>查看解析</view>
+                      </view>
+                      <!--多选题-->
+                      <view s-if="xiaoti.TX ==2">
+                        <multiselect data-px="{{xiaoti.px}}" shiti="{{xiaoti}}" checked="{{checked}}" bindcheckVal="_CLAnswerSelect"></multiselect>
+                        <view data-answer="{{xiaoti.answer}}" data-jiexi="{{xiaoti.jiexi}}" s-if="isSubmit" class="viewJiexi" bindtap="viewJiexi" hover-class='select1' hover-stay-time='500'>查看解析</view>
+                      </view>
+                    </view>
+                  </swiper-item>
+                </block>
+              </swiper>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 载入动画 -->
+<view s-if="!isLoaded">
+  <image class="loading-img" src="/imgs/timg.gif" mode="aspectFit"></image>
+</view>
+
+<!-- 底部正确错误个数统计条 -->
+<modelcount hidden="{{!isLoaded}}" text="{{text}}" id="modelCount" nums="{{nums}}" px="{{shitiNum}}" class="bottom" bindrestart="_restart" bindsubmit="_submit" bindtoogleMarkAnswer="_toogleMarkAnswer">
+</modelcount>
+<!-- 答题板 -->
+<markanswer id="markAnswer" windowHeight="{{windowHeight}}" markAnswerItems="{{markAnswerItems}}" bind:tapEvent="_tapEvent">
+</markanswer>
+<!-- 点击水波 -->
+<waterwave id="waterWave"></waterwave>
+
+<!-- 材料题解析面板 -->
+<cljiexi id="clJiexi" cl_jiexi="{{cl_jiexi}}" cl_answer="{{cl_answer}}"></cljiexi>

@@ -1,0 +1,2855 @@
+[
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/app.js",
+        "row": 16,
+        "column": 6,
+        "before": "wx.showLoading",
+        "after": "swan.showLoading",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/app.js",
+        "row": 41,
+        "column": 6,
+        "before": "wx.request",
+        "after": "swan.request",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/app.js",
+        "row": 50,
+        "column": 12,
+        "before": "wx.hideLoading",
+        "after": "swan.hideLoading",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/app.js",
+        "row": 59,
+        "column": 12,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/app.js",
+        "row": 69,
+        "column": 12,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/app.js",
+        "row": 81,
+        "column": 12,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/app.js",
+        "row": 98,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/app.js",
+        "row": 103,
+        "column": 4,
+        "before": "wx.getSetting",
+        "after": "swan.getSetting",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/animate.js",
+        "row": 2,
+        "column": 20,
+        "before": "wx.createAnimation",
+        "after": "swan.createAnimation",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/animate.js",
+        "row": 13,
+        "column": 20,
+        "before": "wx.createAnimation",
+        "after": "swan.createAnimation",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/post.js",
+        "row": 41,
+        "column": 2,
+        "before": "wx.getStorage",
+        "after": "swan.getStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/post.js",
+        "row": 138,
+        "column": 2,
+        "before": "wx.hideLoading",
+        "after": "swan.hideLoading",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/post.js",
+        "row": 174,
+        "column": 10,
+        "before": "wx.getSystemInfoSync",
+        "after": "swan.getSystemInfoSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/post.js",
+        "row": 209,
+        "column": 2,
+        "before": "wx.hideLoading",
+        "after": "swan.hideLoading",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/post.js",
+        "row": 250,
+        "column": 10,
+        "before": "wx.getSystemInfoSync",
+        "after": "swan.getSystemInfoSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/share.js",
+        "row": 89,
+        "column": 13,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/share.js",
+        "row": 93,
+        "column": 6,
+        "before": "wx.getNetworkType",
+        "after": "swan.getNetworkType",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/share.js",
+        "row": 141,
+        "column": 2,
+        "before": "wx.getSystemInfo",
+        "after": "swan.getSystemInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/share.js",
+        "row": 148,
+        "column": 18,
+        "before": "wx.createSelectorQuery",
+        "after": "swan.createSelectorQuery",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/shiti.js",
+        "row": 522,
+        "column": 26,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/shiti.js",
+        "row": 544,
+        "column": 2,
+        "before": "wx.setStorage",
+        "after": "swan.setStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/shiti.js",
+        "row": 559,
+        "column": 26,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/shiti.js",
+        "row": 609,
+        "column": 2,
+        "before": "wx.setStorage",
+        "after": "swan.setStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/shiti.js",
+        "row": 902,
+        "column": 2,
+        "before": "wx.setStorage",
+        "after": "swan.setStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/shiti.js",
+        "row": 918,
+        "column": 2,
+        "before": "wx.setStorage",
+        "after": "swan.setStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/shiti.js",
+        "row": 931,
+        "column": 4,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/shiti.js",
+        "row": 994,
+        "column": 26,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/shiti.js",
+        "row": 1002,
+        "column": 2,
+        "before": "wx.setStorageSync",
+        "after": "swan.setStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/shiti.js",
+        "row": 1081,
+        "column": 26,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/shiti.js",
+        "row": 1082,
+        "column": 2,
+        "before": "wx.setStorage",
+        "after": "swan.setStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/shiti.js",
+        "row": 1086,
+        "column": 2,
+        "before": "wx.setStorage",
+        "after": "swan.setStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/common/validate.js",
+        "row": 11,
+        "column": 6,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/components/errorRecovery/errorRecovery.js",
+        "row": 114,
+        "column": 8,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/esoterica/esoterica.js",
+        "row": 19,
+        "column": 4,
+        "before": "wx.setNavigationBarTitle",
+        "after": "swan.setNavigationBarTitle",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/esoterica/esoterica.js",
+        "row": 25,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/esoterica/esoterica.js",
+        "row": 48,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/esoterica/esoterica.js",
+        "row": 58,
+        "column": 10,
+        "before": "wx.setTabBarBadge",
+        "after": "swan.setTabBarBadge",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/esoterica/esoterica.js",
+        "row": 63,
+        "column": 10,
+        "before": "wx.removeTabBarBadge",
+        "after": "swan.removeTabBarBadge",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/esoterica/esoterica.js",
+        "row": 76,
+        "column": 4,
+        "before": "wx.getSystemInfo",
+        "after": "swan.getSystemInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/esoterica/esoterica.js",
+        "row": 100,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/esoterica/esoterica.js",
+        "row": 113,
+        "column": 6,
+        "before": "wx.setStorageSync",
+        "after": "swan.setStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/esoterica/esoterica.js",
+        "row": 138,
+        "column": 4,
+        "before": "wx.getStorage",
+        "after": "swan.getStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/esoterica/esoterica.js",
+        "row": 149,
+        "column": 8,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/esoterica/esoterica.js",
+        "row": 162,
+        "column": 18,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 34,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 54,
+        "column": 8,
+        "before": "wx.getStorage",
+        "after": "swan.getStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 58,
+        "column": 12,
+        "before": "wx.getStorage",
+        "after": "swan.getStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 93,
+        "column": 16,
+        "before": "wx.setStorage",
+        "after": "swan.setStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 149,
+        "column": 10,
+        "before": "wx.setTabBarBadge",
+        "after": "swan.setTabBarBadge",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 154,
+        "column": 10,
+        "before": "wx.removeTabBarBadge",
+        "after": "swan.removeTabBarBadge",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 202,
+        "column": 6,
+        "before": "wx.getStorage",
+        "after": "swan.getStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 206,
+        "column": 10,
+        "before": "wx.getStorage",
+        "after": "swan.getStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 228,
+        "column": 14,
+        "before": "wx.setStorage",
+        "after": "swan.setStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 235,
+        "column": 10,
+        "before": "wx.setStorageSync",
+        "after": "swan.setStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 286,
+        "column": 28,
+        "before": "wx.createAnimation",
+        "after": "swan.createAnimation",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 326,
+        "column": 28,
+        "before": "wx.createAnimation",
+        "after": "swan.createAnimation",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 357,
+        "column": 26,
+        "before": "wx.createAnimation",
+        "after": "swan.createAnimation",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 422,
+        "column": 4,
+        "before": "wx.getStorage",
+        "after": "swan.getStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 434,
+        "column": 8,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 453,
+        "column": 4,
+        "before": "wx.getStorage",
+        "after": "swan.getStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 463,
+        "column": 8,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 482,
+        "column": 4,
+        "before": "wx.getStorage",
+        "after": "swan.getStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 492,
+        "column": 8,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 512,
+        "column": 4,
+        "before": "wx.getStorage",
+        "after": "swan.getStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 522,
+        "column": 8,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 542,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 565,
+        "column": 4,
+        "before": "wx.getStorage",
+        "after": "swan.getStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 581,
+        "column": 12,
+        "before": "wx.setTabBarBadge",
+        "after": "swan.setTabBarBadge",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 586,
+        "column": 12,
+        "before": "wx.removeTabBarBadge",
+        "after": "swan.removeTabBarBadge",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 592,
+        "column": 8,
+        "before": "wx.getStorage",
+        "after": "swan.getStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 658,
+        "column": 12,
+        "before": "wx.setStorage",
+        "after": "swan.setStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 732,
+        "column": 22,
+        "before": "wx.getSystemInfoSync",
+        "after": "swan.getSystemInfoSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 733,
+        "column": 23,
+        "before": "wx.getSystemInfoSync",
+        "after": "swan.getSystemInfoSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/index/index.js",
+        "row": 750,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/kaodianDetail/kaodianDetail.js",
+        "row": 23,
+        "column": 4,
+        "before": "wx.setNavigationBarTitle",
+        "after": "swan.setNavigationBarTitle",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/kaodianDetail/kaodianDetail.js",
+        "row": 29,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/kaodianDetail/kaodianDetail.js",
+        "row": 125,
+        "column": 4,
+        "before": "wx.setNavigationBarColor",
+        "after": "swan.setNavigationBarColor",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/kaodianDetail/kaodianDetail.js",
+        "row": 154,
+        "column": 8,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/kaodianDetail/kaodianDetail.js",
+        "row": 167,
+        "column": 8,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/kaodianDetail/kaodianDetail.js",
+        "row": 193,
+        "column": 6,
+        "before": "wx.setNavigationBarTitle",
+        "after": "swan.setNavigationBarTitle",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/kaodianDetail/kaodianDetail.js",
+        "row": 214,
+        "column": 4,
+        "before": "wx.getSystemInfo",
+        "after": "swan.getSystemInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 92,
+        "column": 4,
+        "before": "wx.showLoading",
+        "after": "swan.showLoading",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 102,
+        "column": 10,
+        "before": "wx.getUserInfo",
+        "after": "swan.getUserInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 126,
+        "column": 16,
+        "before": "wx.setStorage",
+        "after": "swan.setStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 131,
+        "column": 16,
+        "before": "wx.navigateBack",
+        "after": "swan.navigateBack",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 133,
+        "column": 20,
+        "before": "wx.hideLoading",
+        "after": "swan.hideLoading",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 139,
+        "column": 20,
+        "before": "wx.redirectTo",
+        "after": "swan.redirectTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 143,
+        "column": 20,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 153,
+        "column": 14,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 263,
+        "column": 8,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 301,
+        "column": 6,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 379,
+        "column": 8,
+        "before": "wx.setStorage",
+        "after": "swan.setStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 383,
+        "column": 12,
+        "before": "wx.navigateBack",
+        "after": "swan.navigateBack",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 386,
+        "column": 14,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 397,
+        "column": 6,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 403,
+        "column": 6,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 437,
+        "column": 8,
+        "before": "wx.setStorage",
+        "after": "swan.setStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 441,
+        "column": 12,
+        "before": "wx.navigateBack",
+        "after": "swan.navigateBack",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 444,
+        "column": 14,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 457,
+        "column": 6,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 485,
+        "column": 6,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 498,
+        "column": 8,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 504,
+        "column": 8,
+        "before": "wx.setStorage",
+        "after": "swan.setStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 508,
+        "column": 12,
+        "before": "wx.navigateBack",
+        "after": "swan.navigateBack",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 511,
+        "column": 14,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 523,
+        "column": 6,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 530,
+        "column": 6,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 558,
+        "column": 6,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 576,
+        "column": 10,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 585,
+        "column": 6,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 592,
+        "column": 6,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/logs/logs.js",
+        "row": 10,
+        "column": 13,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/about/about.js",
+        "row": 14,
+        "column": 4,
+        "before": "wx.setNavigationBarTitle",
+        "after": "swan.setNavigationBarTitle",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/about/about.js",
+        "row": 18,
+        "column": 4,
+        "before": "wx.hideTabBar",
+        "after": "swan.hideTabBar",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/message/message.js",
+        "row": 23,
+        "column": 4,
+        "before": "wx.setNavigationBarTitle",
+        "after": "swan.setNavigationBarTitle",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/message/message.js",
+        "row": 28,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/message/message.js",
+        "row": 107,
+        "column": 4,
+        "before": "wx.getSystemInfo",
+        "after": "swan.getSystemInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/mineIndex/mineIndex.js",
+        "row": 15,
+        "column": 18,
+        "before": "wx.getSystemInfoSync",
+        "after": "swan.getSystemInfoSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/mineIndex/mineIndex.js",
+        "row": 16,
+        "column": 9,
+        "before": "wx.getSystemInfoSync",
+        "after": "swan.getSystemInfoSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/mineIndex/mineIndex.js",
+        "row": 22,
+        "column": 13,
+        "before": "wx.createCanvasContext",
+        "after": "swan.createCanvasContext",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/mineIndex/mineIndex.js",
+        "row": 129,
+        "column": 4,
+        "before": "wx.getSystemInfo",
+        "after": "swan.getSystemInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/mineIndex/mineIndex.js",
+        "row": 146,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/mineIndex/mineIndex.js",
+        "row": 156,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/mineIndex/mineIndex.js",
+        "row": 170,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/mineIndex/mineIndex.js",
+        "row": 200,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/mineIndex/mineIndex.js",
+        "row": 217,
+        "column": 10,
+        "before": "wx.setTabBarBadge",
+        "after": "swan.setTabBarBadge",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/mineIndex/mineIndex.js",
+        "row": 222,
+        "column": 10,
+        "before": "wx.removeTabBarBadge",
+        "after": "swan.removeTabBarBadge",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/mineIndex/mineIndex.js",
+        "row": 231,
+        "column": 6,
+        "before": "wx.setTabBarBadge",
+        "after": "swan.setTabBarBadge",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/mineIndex/mineIndex.js",
+        "row": 238,
+        "column": 6,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/mineIndex/mineIndex.js",
+        "row": 255,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/mineRadar/mineRadar.js",
+        "row": 10,
+        "column": 18,
+        "before": "wx.getSystemInfoSync",
+        "after": "swan.getSystemInfoSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/mineRadar/mineRadar.js",
+        "row": 12,
+        "column": 9,
+        "before": "wx.getSystemInfoSync",
+        "after": "swan.getSystemInfoSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/mineRadar/mineRadar.js",
+        "row": 18,
+        "column": 13,
+        "before": "wx.createCanvasContext",
+        "after": "swan.createCanvasContext",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/mineRadar/mineRadar.js",
+        "row": 50,
+        "column": 4,
+        "before": "wx.setNavigationBarTitle",
+        "after": "swan.setNavigationBarTitle",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/mineRadar/mineRadar.js",
+        "row": 57,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/mineRadar/mineRadar.js",
+        "row": 75,
+        "column": 4,
+        "before": "wx.getSystemInfo",
+        "after": "swan.getSystemInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/set/set.js",
+        "row": 16,
+        "column": 6,
+        "before": "wx.getStorage",
+        "after": "swan.getStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/set/set.js",
+        "row": 25,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/set/set.js",
+        "row": 41,
+        "column": 4,
+        "before": "wx.getSystemInfo",
+        "after": "swan.getSystemInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/set/set.js",
+        "row": 58,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/set/set.js",
+        "row": 59,
+        "column": 19,
+        "before": "wx.getStorageInfoSync",
+        "after": "swan.getStorageInfoSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/set/set.js",
+        "row": 69,
+        "column": 6,
+        "before": "wx.removeStorageSync",
+        "after": "swan.removeStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/set/set.js",
+        "row": 72,
+        "column": 20,
+        "before": "wx.getStorageInfoSync",
+        "after": "swan.getStorageInfoSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/set/set.js",
+        "row": 76,
+        "column": 4,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/set/set.js",
+        "row": 86,
+        "column": 4,
+        "before": "wx.showModal",
+        "after": "swan.showModal",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/set/set.js",
+        "row": 92,
+        "column": 10,
+        "before": "wx.removeStorageSync",
+        "after": "swan.removeStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/set/set.js",
+        "row": 94,
+        "column": 10,
+        "before": "wx.removeStorage",
+        "after": "swan.removeStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/set/set.js",
+        "row": 97,
+        "column": 14,
+        "before": "wx.navigateBack",
+        "after": "swan.navigateBack",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/set/set.js",
+        "row": 113,
+        "column": 4,
+        "before": "wx.setStorageSync",
+        "after": "swan.setStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/tuijian/tuijian.js",
+        "row": 84,
+        "column": 4,
+        "before": "wx.previewImage",
+        "after": "swan.previewImage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context && method",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/mine/tuijian/tuijian.js",
+        "row": 91,
+        "column": 4,
+        "before": "wx.navigateToMiniProgram",
+        "after": "swan.navigateToSmartProgram",
+        "message": "转换上下文和方法"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/kanjia/kanjia.js",
+        "row": 39,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/kanjia/kanjia.js",
+        "row": 48,
+        "column": 10,
+        "before": "wx.getUserInfo",
+        "after": "swan.getUserInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/kanjia/kanjia.js",
+        "row": 156,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/kanjia/kanjia.js",
+        "row": 246,
+        "column": 8,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/kanjia/kanjia.js",
+        "row": 263,
+        "column": 6,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/kanjia/kanjia.js",
+        "row": 298,
+        "column": 4,
+        "before": "wx.switchTab",
+        "after": "swan.switchTab",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/pay.js",
+        "row": 55,
+        "column": 4,
+        "before": "wx.getUserInfo",
+        "after": "swan.getUserInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/pay.js",
+        "row": 66,
+        "column": 12,
+        "before": "wx.setNavigationBarColor",
+        "after": "swan.setNavigationBarColor",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/pay.js",
+        "row": 99,
+        "column": 4,
+        "before": "wx.makePhoneCall",
+        "after": "swan.makePhoneCall",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/pay.js",
+        "row": 115,
+        "column": 4,
+        "before": "wx.makePhoneCall",
+        "after": "swan.makePhoneCall",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/pay.js",
+        "row": 127,
+        "column": 4,
+        "before": "wx.getSystemInfo",
+        "after": "swan.getSystemInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/pay.js",
+        "row": 147,
+        "column": 4,
+        "before": "wx.setNavigationBarTitle",
+        "after": "swan.setNavigationBarTitle",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/pay.js",
+        "row": 156,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/pay.js",
+        "row": 210,
+        "column": 6,
+        "before": "wx.navigateBack",
+        "after": "swan.navigateBack",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/pay.js",
+        "row": 254,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/pay.js",
+        "row": 302,
+        "column": 22,
+        "before": "wx.navigateBack",
+        "after": "swan.navigateBack",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/pay.js",
+        "row": 305,
+        "column": 22,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context && method",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/pay.js",
+        "row": 317,
+        "column": 14,
+        "before": "wx.requestPayment",
+        "after": "swan.requestPayment",
+        "message": "转换上下文和方法"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/pay.js",
+        "row": 332,
+        "column": 6,
+        "before": "wx.showModal",
+        "after": "swan.showModal",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/pay.js",
+        "row": 338,
+        "column": 12,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/pay.js",
+        "row": 346,
+        "column": 6,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/phoneLogin/phoneLogin.js",
+        "row": 71,
+        "column": 8,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/phoneLogin/phoneLogin.js",
+        "row": 105,
+        "column": 6,
+        "before": "wx.showModal",
+        "after": "swan.showModal",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/phoneLogin/phoneLogin.js",
+        "row": 122,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/phoneLogin/phoneLogin.js",
+        "row": 142,
+        "column": 8,
+        "before": "wx.setStorage",
+        "after": "swan.setStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/phoneLogin/phoneLogin.js",
+        "row": 146,
+        "column": 12,
+        "before": "wx.navigateBack",
+        "after": "swan.navigateBack",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/phoneLogin/phoneLogin.js",
+        "row": 151,
+        "column": 14,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/phoneLogin/phoneLogin.js",
+        "row": 162,
+        "column": 6,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/phoneLogin/phoneLogin.js",
+        "row": 168,
+        "column": 6,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/prompt/hasNoShiti/hasNoShiti.js",
+        "row": 16,
+        "column": 4,
+        "before": "wx.setNavigationBarTitle",
+        "after": "swan.setNavigationBarTitle",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/prompt/hasNoShiti/hasNoShiti.js",
+        "row": 26,
+        "column": 4,
+        "before": "wx.navigateBack",
+        "after": "swan.navigateBack",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/prompt/jieAnswerAll/jieAnswerAll.js",
+        "row": 15,
+        "column": 4,
+        "before": "wx.setNavigationBarTitle",
+        "after": "swan.setNavigationBarTitle",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/prompt/jieAnswerAll/jieAnswerAll.js",
+        "row": 37,
+        "column": 4,
+        "before": "wx.navigateBack",
+        "after": "swan.navigateBack",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/prompt/markAnswerAll/markAnswerAll.js",
+        "row": 15,
+        "column": 4,
+        "before": "wx.setNavigationBarTitle",
+        "after": "swan.setNavigationBarTitle",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/prompt/markAnswerAll/markAnswerAll.js",
+        "row": 37,
+        "column": 4,
+        "before": "wx.navigateBack",
+        "after": "swan.navigateBack",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/prompt/modelRealScore/modelRealScore.js",
+        "row": 18,
+        "column": 4,
+        "before": "wx.setNavigationBarTitle",
+        "after": "swan.setNavigationBarTitle",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/prompt/modelRealScore/modelRealScore.js",
+        "row": 20,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/prompt/modelRealScore/modelRealScore.js",
+        "row": 79,
+        "column": 4,
+        "before": "wx.navigateBack",
+        "after": "swan.navigateBack",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/prompt/modelRealScore/modelRealScore.js",
+        "row": 122,
+        "column": 4,
+        "before": "wx.navigateBack",
+        "after": "swan.navigateBack",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/kaoqianmiji/kaoqianmiji.js",
+        "row": 26,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/kaoqianmiji/kaoqianmiji.js",
+        "row": 59,
+        "column": 12,
+        "before": "wx.setTabBarBadge",
+        "after": "swan.setTabBarBadge",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/kaoqianmiji/kaoqianmiji.js",
+        "row": 64,
+        "column": 12,
+        "before": "wx.setTabBarBadge",
+        "after": "swan.setTabBarBadge",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/kaoqianmiji/kaoqianmiji.js",
+        "row": 74,
+        "column": 6,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/kaoqianmiji/kaoqianmiji.js",
+        "row": 96,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/kaoqianmiji/kaoqianmiji.js",
+        "row": 109,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/kaoqianmiji/kaoqianmiji.js",
+        "row": 119,
+        "column": 4,
+        "before": "wx.getSystemInfo",
+        "after": "swan.getSystemInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/kaoqianmiji/kaoqianmiji.js",
+        "row": 131,
+        "column": 15,
+        "before": "wx.createLivePlayerContext",
+        "after": "swan.createLivePlayerContext",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/live/live.js",
+        "row": 25,
+        "column": 21,
+        "before": "wx.createLivePlayerContext",
+        "after": "swan.createLivePlayerContext",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/live/live.js",
+        "row": 39,
+        "column": 15,
+        "before": "wx.createLivePlayerContext",
+        "after": "swan.createLivePlayerContext",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/live/live.js",
+        "row": 40,
+        "column": 4,
+        "before": "wx.getSystemInfo",
+        "after": "swan.getSystemInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/live/live.js",
+        "row": 52,
+        "column": 4,
+        "before": "wx.setKeepScreenOn",
+        "after": "swan.setKeepScreenOn",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/live/live.js",
+        "row": 68,
+        "column": 21,
+        "before": "wx.createLivePlayerContext",
+        "after": "swan.createLivePlayerContext",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/live/live.js",
+        "row": 76,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/live/live.js",
+        "row": 208,
+        "column": 6,
+        "before": "wx.navigateBack",
+        "after": "swan.navigateBack",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/live/live.js",
+        "row": 216,
+        "column": 4,
+        "before": "wx.navigateBack",
+        "after": "swan.navigateBack",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/live/live.js",
+        "row": 223,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/live/live.js",
+        "row": 235,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/mark/mark.js",
+        "row": 14,
+        "column": 18,
+        "before": "wx.getSystemInfoSync",
+        "after": "swan.getSystemInfoSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/mark/mark.js",
+        "row": 42,
+        "column": 4,
+        "before": "wx.setNavigationBarTitle",
+        "after": "swan.setNavigationBarTitle",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/mark/mark.js",
+        "row": 46,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/mark/mark.js",
+        "row": 59,
+        "column": 6,
+        "before": "wx.hideLoading",
+        "after": "swan.hideLoading",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/mark/mark.js",
+        "row": 71,
+        "column": 4,
+        "before": "wx.getSystemInfo",
+        "after": "swan.getSystemInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/mark/mark.js",
+        "row": 272,
+        "column": 6,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/mark/mark.js",
+        "row": 423,
+        "column": 10,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/mark/mark.js",
+        "row": 669,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelReal/modelRealDetail/modelRealDetail.js",
+        "row": 14,
+        "column": 18,
+        "before": "wx.getSystemInfoSync",
+        "after": "swan.getSystemInfoSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelReal/modelRealDetail/modelRealDetail.js",
+        "row": 39,
+        "column": 4,
+        "before": "wx.setNavigationBarTitle",
+        "after": "swan.setNavigationBarTitle",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelReal/modelRealDetail/modelRealDetail.js",
+        "row": 45,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelReal/modelRealDetail/modelRealDetail.js",
+        "row": 59,
+        "column": 26,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelReal/modelRealDetail/modelRealDetail.js",
+        "row": 123,
+        "column": 21,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelReal/modelRealDetail/modelRealDetail.js",
+        "row": 128,
+        "column": 21,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelReal/modelRealDetail/modelRealDetail.js",
+        "row": 135,
+        "column": 33,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelReal/modelRealDetail/modelRealDetail.js",
+        "row": 142,
+        "column": 6,
+        "before": "wx.getStorage",
+        "after": "swan.getStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelReal/modelRealDetail/modelRealDetail.js",
+        "row": 189,
+        "column": 10,
+        "before": "wx.setStorage",
+        "after": "swan.setStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelReal/modelRealDetail/modelRealDetail.js",
+        "row": 259,
+        "column": 6,
+        "before": "wx.hideLoading",
+        "after": "swan.hideLoading",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelReal/modelRealDetail/modelRealDetail.js",
+        "row": 262,
+        "column": 6,
+        "before": "wx.hideLoading",
+        "after": "swan.hideLoading",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelReal/modelRealDetail/modelRealDetail.js",
+        "row": 285,
+        "column": 4,
+        "before": "wx.getSystemInfo",
+        "after": "swan.getSystemInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelReal/modelRealDetail/modelRealDetail.js",
+        "row": 714,
+        "column": 6,
+        "before": "wx.setStorage",
+        "after": "swan.setStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelReal/modelRealDetail/modelRealDetail.js",
+        "row": 1010,
+        "column": 6,
+        "before": "wx.setStorage",
+        "after": "swan.setStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelReal/modelRealDetail/modelRealDetail.js",
+        "row": 1016,
+        "column": 6,
+        "before": "wx.setStorage",
+        "after": "swan.setStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelReal/modelRealDetail/modelRealDetail.js",
+        "row": 1026,
+        "column": 6,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelReal/modelRealList/modelRealList.js",
+        "row": 23,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelReal/modelRealList/modelRealList.js",
+        "row": 28,
+        "column": 4,
+        "before": "wx.setNavigationBarTitle",
+        "after": "swan.setNavigationBarTitle",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelReal/modelRealList/modelRealList.js",
+        "row": 61,
+        "column": 6,
+        "before": "wx.hideLoading",
+        "after": "swan.hideLoading",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelReal/modelRealList/modelRealList.js",
+        "row": 82,
+        "column": 4,
+        "before": "wx.getStorage",
+        "after": "swan.getStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelReal/modelRealList/modelRealList.js",
+        "row": 94,
+        "column": 8,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelReal/modelRealList/modelRealList.js",
+        "row": 112,
+        "column": 4,
+        "before": "wx.getSystemInfo",
+        "after": "swan.getSystemInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelTest/modelTest.js",
+        "row": 7,
+        "column": 18,
+        "before": "wx.getSystemInfoSync",
+        "after": "swan.getSystemInfoSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelTest/modelTest.js",
+        "row": 34,
+        "column": 4,
+        "before": "wx.setNavigationBarTitle",
+        "after": "swan.setNavigationBarTitle",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelTest/modelTest.js",
+        "row": 36,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelTest/modelTest.js",
+        "row": 44,
+        "column": 20,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelTest/modelTest.js",
+        "row": 59,
+        "column": 6,
+        "before": "wx.getStorage",
+        "after": "swan.getStorage",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelTest/modelTest.js",
+        "row": 85,
+        "column": 14,
+        "before": "wx.getSystemInfoSync",
+        "after": "swan.getSystemInfoSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelTest/modelTest.js",
+        "row": 100,
+        "column": 6,
+        "before": "wx.hideLoading",
+        "after": "swan.hideLoading",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelTest/modelTest.js",
+        "row": 103,
+        "column": 6,
+        "before": "wx.hideLoading",
+        "after": "swan.hideLoading",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelTest/modelTest.js",
+        "row": 114,
+        "column": 4,
+        "before": "wx.getSystemInfo",
+        "after": "swan.getSystemInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelTest/modelTest.js",
+        "row": 160,
+        "column": 8,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelTest/modelTest.js",
+        "row": 172,
+        "column": 10,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/modelTest/modelTest.js",
+        "row": 176,
+        "column": 10,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/pastVideo/pastVideo.js",
+        "row": 18,
+        "column": 4,
+        "before": "wx.setNavigationBarTitle",
+        "after": "swan.setNavigationBarTitle",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/pastVideo/pastVideo.js",
+        "row": 34,
+        "column": 24,
+        "before": "wx.createVideoContext",
+        "after": "swan.createVideoContext",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/pastVideo/pastVideo.js",
+        "row": 54,
+        "column": 6,
+        "before": "wx.navigateBack",
+        "after": "swan.navigateBack",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/wrong/wrong.js",
+        "row": 14,
+        "column": 18,
+        "before": "wx.getSystemInfoSync",
+        "after": "swan.getSystemInfoSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/wrong/wrong.js",
+        "row": 44,
+        "column": 4,
+        "before": "wx.setNavigationBarTitle",
+        "after": "swan.setNavigationBarTitle",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/wrong/wrong.js",
+        "row": 48,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/wrong/wrong.js",
+        "row": 61,
+        "column": 6,
+        "before": "wx.hideLoading",
+        "after": "swan.hideLoading",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/wrong/wrong.js",
+        "row": 76,
+        "column": 4,
+        "before": "wx.getSystemInfo",
+        "after": "swan.getSystemInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/wrong/wrong.js",
+        "row": 190,
+        "column": 12,
+        "before": "wx.hideLoading",
+        "after": "swan.hideLoading",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/wrong/wrong.js",
+        "row": 193,
+        "column": 12,
+        "before": "wx.hideLoading",
+        "after": "swan.hideLoading",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/wrong/wrong.js",
+        "row": 223,
+        "column": 12,
+        "before": "wx.hideLoading",
+        "after": "swan.hideLoading",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/wrong/wrong.js",
+        "row": 226,
+        "column": 12,
+        "before": "wx.hideLoading",
+        "after": "swan.hideLoading",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/wrong/wrong.js",
+        "row": 247,
+        "column": 10,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/wrong/wrong.js",
+        "row": 263,
+        "column": 10,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/wrong/wrong.js",
+        "row": 360,
+        "column": 6,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/wrong/wrong.js",
+        "row": 511,
+        "column": 10,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/wrong/wrong.js",
+        "row": 774,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/zuoti/zuoti.js",
+        "row": 37,
+        "column": 4,
+        "before": "wx.setNavigationBarTitle",
+        "after": "swan.setNavigationBarTitle",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/zuoti/zuoti.js",
+        "row": 43,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/zuoti/zuoti.js",
+        "row": 52,
+        "column": 20,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/zuoti/zuoti.js",
+        "row": 65,
+        "column": 6,
+        "before": "wx.hideLoading",
+        "after": "swan.hideLoading",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/zuoti/zuoti.js",
+        "row": 77,
+        "column": 4,
+        "before": "wx.getSystemInfo",
+        "after": "swan.getSystemInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/zuoti/zuoti.js",
+        "row": 167,
+        "column": 6,
+        "before": "wx.showModal",
+        "after": "swan.showModal",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/zuoti/zuoti.js",
+        "row": 174,
+        "column": 12,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/zuoti/zuoti.js",
+        "row": 181,
+        "column": 12,
+        "before": "wx.navigateBack",
+        "after": "swan.navigateBack",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/zuoti/zuoti.js",
+        "row": 327,
+        "column": 6,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/zuoti/zuoti.js",
+        "row": 483,
+        "column": 10,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/zuoti/zuoti.js",
+        "row": 617,
+        "column": 6,
+        "before": "wx.showModal",
+        "after": "swan.showModal",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/zuoti/zuoti.js",
+        "row": 624,
+        "column": 12,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/zuoti/zuoti.js",
+        "row": 631,
+        "column": 12,
+        "before": "wx.navigateBack",
+        "after": "swan.navigateBack",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/zuoti/zuoti.js",
+        "row": 775,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/tiku/zuoti/zuoti.js",
+        "row": 793,
+        "column": 6,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 39,
+        "column": 4,
+        "before": "wx.setNavigationBarTitle",
+        "after": "swan.setNavigationBarTitle",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 60,
+        "column": 19,
+        "before": "wx.createVideoContext",
+        "after": "swan.createVideoContext",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 62,
+        "column": 4,
+        "before": "wx.getSystemInfo",
+        "after": "swan.getSystemInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 78,
+        "column": 24,
+        "before": "wx.createVideoContext",
+        "after": "swan.createVideoContext",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 87,
+        "column": 22,
+        "before": "wx.getSystemInfoSync",
+        "after": "swan.getSystemInfoSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 88,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 98,
+        "column": 24,
+        "before": "wx.createVideoContext",
+        "after": "swan.createVideoContext",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 102,
+        "column": 17,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 128,
+        "column": 10,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 137,
+        "column": 19,
+        "before": "wx.createCanvasContext",
+        "after": "swan.createCanvasContext",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 211,
+        "column": 6,
+        "before": "wx.canvasToTempFilePath",
+        "after": "swan.canvasToTempFilePath",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 257,
+        "column": 6,
+        "before": "wx.canvasToTempFilePath",
+        "after": "swan.canvasToTempFilePath",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 301,
+        "column": 6,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 411,
+        "column": 6,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 465,
+        "column": 6,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 532,
+        "column": 6,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 601,
+        "column": 6,
+        "before": "wx.setStorageSync",
+        "after": "swan.setStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 645,
+        "column": 4,
+        "before": "wx.setStorageSync",
+        "after": "swan.setStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 646,
+        "column": 4,
+        "before": "wx.setStorageSync",
+        "after": "swan.setStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 677,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 716,
+        "column": 22,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context && method",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 741,
+        "column": 14,
+        "before": "wx.requestPayment",
+        "after": "swan.requestPayment",
+        "message": "转换上下文和方法"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 778,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 819,
+        "column": 22,
+        "before": "wx.showToast",
+        "after": "swan.showToast",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context && method",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 845,
+        "column": 14,
+        "before": "wx.requestPayment",
+        "after": "swan.requestPayment",
+        "message": "转换上下文和方法"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 881,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoIndex/videoIndex.js",
+        "row": 33,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoIndex/videoIndex.js",
+        "row": 35,
+        "column": 4,
+        "before": "wx.removeStorageSync",
+        "after": "swan.removeStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoIndex/videoIndex.js",
+        "row": 42,
+        "column": 6,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoIndex/videoIndex.js",
+        "row": 53,
+        "column": 4,
+        "before": "wx.getSystemInfo",
+        "after": "swan.getSystemInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoIndex/videoIndex.js",
+        "row": 80,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoIndex/videoIndex.js",
+        "row": 90,
+        "column": 20,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoIndex/videoIndex.js",
+        "row": 118,
+        "column": 12,
+        "before": "wx.setTabBarBadge",
+        "after": "swan.setTabBarBadge",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoIndex/videoIndex.js",
+        "row": 123,
+        "column": 12,
+        "before": "wx.removeTabBarBadge",
+        "after": "swan.removeTabBarBadge",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoIndex/videoIndex.js",
+        "row": 195,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    }
+]

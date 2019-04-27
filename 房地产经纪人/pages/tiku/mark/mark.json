@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "count": "/components/count/count",
+    "markanswer": "/components/markAnswer/markAnswer",
+    "question": "/components/question/question",
+    "singleselect": "/components/singleSelect/singleSelect",
+    "multiselect": "/components/multiSelect/multiSelect",
+    "jiexi": "/components/jiexi/jiexi",
+    "hasnopage": "/components/hasNoPage/hasNoPage",
+    "errorrecovery": "/components/errorRecovery/errorRecovery",
+    "cljiexi": "/components/clJiexi/clJiexi"
+  }
+}

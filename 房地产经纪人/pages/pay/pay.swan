@@ -1,0 +1,114 @@
+<!--pages/pay/pay.wxml-->
+
+<view s-if="hasCompany || platform =='ios'" class="mycontainer">
+  <!-- 第一块 -->
+  <view s-if="hasCompany" class="up">
+    <image class="bg" src="/imgs/bg1.png" mode="aspectFit">
+    </image>
+
+    <view class="block1">
+      <text class="text1"> 房地产经纪人</text>
+      <view class="text2">冲刺班 4580
+        <span style="font-size:23rpx;margin-left:5rpx;">元</span>
+      </view>
+      <view class="bt-block">
+        <view class="bt1">
+          <view class="phone-container">
+            <image class="phone" mode="aspectFit" src="/imgs/phone1.png"></image>
+          </view>
+          <text bindtap='call400' class="bt-text">详情咨询</text>
+        </view>
+        <button data-product="jjr" open-type="getUserInfo" bindgetuserinfo='showPayDetail' class="bt2">立即开通</button>
+      </view>
+    </view>
+  </view>
+
+  <!-- 第二块 -->
+  <view s-if="hasCompany" class="down">
+    <image class="bg" src="/imgs/bg2.png" mode="aspectFit">
+    </image>
+
+    <view class="block2">
+      <text class="text1"> 房地产经纪人协理</text>
+      <view class="text2">冲刺班 2480
+        <span style="font-size:23rpx;margin-left:5rpx;">元</span>
+      </view>
+      <view class="bt-block">
+        <view class="bt1" style="background:#bdedc1;">
+          <view class="phone-container">
+            <image class="phone" mode="aspectFit" src="/imgs/phone2.png"></image>
+          </view>
+          <text bindtap='call400' class="bt-text" style="color:#54a54c;">详情咨询</text>
+        </view>
+        <button data-product="xl" open-type="getUserInfo" bindgetuserinfo='showPayDetail' class="bt2" style="background:#ff8b0e">立即开通</button>
+      </view>
+    </view>
+  </view>
+
+  <!-- 联系本地运营商,享受专属折扣优惠 -->
+  <view class="service" bindtap='tel' style="top:{{platform == 'ios'?30:630}}rpx">
+    <view class="service-text1">联系本地运营商 享受专属折扣优惠</view>
+    <view class="company-name">{{company}}</view>
+    <view class="address">{{address}}</view>
+    <view class="company">
+      <image class="company-phone" src="/imgs/phone.png" mode="aspectFit"></image>
+      <view class="company-tel">{{tel}}</view>
+    </view>
+  </view>
+</view>
+
+<!-- 砍价版 -->
+<view s-if="!hasCompany &&platform!= 'ios'" class="mycontainer1">
+  <view class="title">{{myproduct.title}}</view>
+  <view class="info">
+    <view class="info-text">
+      <view s-for="info, index in myproduct.info" s-key="k">
+        <view class="info-text-block">
+          <image class="info-text-icon" src="/imgs/shape.png"></image>
+          <view class="info-text-detail">{{info}}</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="info-bottom">自购买之日内两年有效</view>
+  </view>
+
+  <!-- 中间的价格 -->
+  <view class="price">
+    <view class="price-text">¥</view>
+    <view s-for="word, index in money_now" s-key="w">
+      <view class="price-text">{{word}}</view>
+    </view>
+  </view>
+
+  <!-- 砍价 -->
+  <view class="kanjia">
+    <view s-if="!over" data-taocan="{{product}}" class="kanjia-btn1" bindtap="GOkanjia">{{hasEndtime?'查看':'邀请'}}好友助力砍价</view>
+    <view s-if="over" class="kanjia-btn1" style=" background: linear-gradient(to bottom,#029cfe,#4267f7);">活动已结束</view>
+    <button data-type="direct" class="kanjia-btn2" open-type="getUserInfo" bindgetuserinfo='_submit'>立即开通</button>
+  </view>
+
+  <!-- 助力倒计时 -->
+  <view s-if="hasEndtime" class="daojishi">
+    <view>助力倒计时</view>
+    <view class="daojishi-text">{{timeObj.hStr}}</view>
+    <view style="margin-left:10rpx;">时</view>
+    <view class="daojishi-text">{{timeObj.mStr}}</view>
+    <view style="margin-left:10rpx;">分</view>
+    <view class="daojishi-text">{{timeObj.sStr}}</view>
+    <view style="margin-left:10rpx;">秒</view>
+  </view>
+
+  <!-- 砍价规则 -->
+  <view class="role">
+    <view class="role-title">助力砍价规则</view>
+    <view class="role-info">
+      <view class="role-info-text">1.邀请助力砍价成功后助力砍价计时开始。</view>
+      <view class="role-info-text">2.邀请好友助力有效期3天,3天后好友不可再助力砍价。</view>
+      <view class="role-info-text">3.活动期间同一个好友仅可助力一次。</view>
+    </view>
+  </view>
+</view>
+
+<!-- 支付详细信息 -->
+<payDetail windowHeight="{{windowHeight}}" id="payDetail" bindsubmit="_submit"></payDetail>

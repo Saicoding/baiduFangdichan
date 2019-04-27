@@ -1,0 +1,47 @@
+[
+    {
+        "type": "show tips",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/login1/login1.js",
+        "row": 95,
+        "column": 4,
+        "before": "wx.login",
+        "after": "swan.login",
+        "message": "wx.login --- 登录接口code换取openid和session_key 在百度小程序中存在diff \n      相关文档：https://smartapp.baidu.com/docs/develop/api/open_log/#Session-Key/"
+    },
+    {
+        "type": "show tips",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/kanjia/kanjia.js",
+        "row": 41,
+        "column": 4,
+        "before": "wx.login",
+        "after": "swan.login",
+        "message": "wx.login --- 登录接口code换取openid和session_key 在百度小程序中存在diff \n      相关文档：https://smartapp.baidu.com/docs/develop/api/open_log/#Session-Key/"
+    },
+    {
+        "type": "show tips",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/pay/pay.js",
+        "row": 259,
+        "column": 4,
+        "before": "wx.login",
+        "after": "swan.login",
+        "message": "wx.login --- 登录接口code换取openid和session_key 在百度小程序中存在diff \n      相关文档：https://smartapp.baidu.com/docs/develop/api/open_log/#Session-Key/"
+    },
+    {
+        "type": "show tips",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 682,
+        "column": 4,
+        "before": "wx.login",
+        "after": "swan.login",
+        "message": "wx.login --- 登录接口code换取openid和session_key 在百度小程序中存在diff \n      相关文档：https://smartapp.baidu.com/docs/develop/api/open_log/#Session-Key/"
+    },
+    {
+        "type": "show tips",
+        "file": "D:/12-baidu-project/房地产经纪人/pages/video/videoDetail/videoDetail.js",
+        "row": 783,
+        "column": 4,
+        "before": "wx.login",
+        "after": "swan.login",
+        "message": "wx.login --- 登录接口code换取openid和session_key 在百度小程序中存在diff \n      相关文档：https://smartapp.baidu.com/docs/develop/api/open_log/#Session-Key/"
+    }
+]

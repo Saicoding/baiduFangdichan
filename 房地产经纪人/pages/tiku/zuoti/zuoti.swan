@@ -11,8 +11,10 @@
           <view style="margin-botoom:50rpx;" s-if="shiti.TX == 1">
             <singleselect shiti="{{shiti}}" checked="{{checked}}" bindanswerSelect="_answerSelect"> </singleselect>
             <!-- 解析 -->
-            <jiexi buy="{{buy}}" answer="{{shiti.answer}}" isAnswer="{{shiti.isAnswer}}" jiexi="{{shiti.jiexi}}"></jiexi>
+             <jiexi buy="{{buy}}" answer="{{shiti.answer}}" isAnswer="{{shiti.isAnswer}}" jiexi="{{shiti.jiexi}}" ></jiexi>
           </view>
+
+         
 
           <!--多选题-->
           <view style="margin-botoom:50rpx;" s-if="shiti.TX ==2">

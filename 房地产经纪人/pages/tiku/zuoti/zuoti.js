@@ -90,13 +90,14 @@ Page({
   /**
   * 切换问题的动画
   */
-  _toogleAnimation: function () {
+  _toogleAnimation: function (e) {
     let self = this;
+    let quspx = e.detail.px;//问题组件的px
 
     let px = self.data.px; //当前px
     let str = "#q" + px; //当前问题组件id
     let question = self.selectComponent(str); //当前问题组件
-
+    console.log(question)
     let shitiArray = self.data.shitiArray; //当前试题数组
     let shiti = shitiArray[px - 1]; //当前试题
     let height = self.data.height;
@@ -131,6 +132,7 @@ Page({
     let myFavorite = 0;
     let buy = this.data.buy;
     let px = self.data.px;
+    let cpx = px;
     if (source != "touch") return;
 
     let direction = "";
@@ -147,11 +149,9 @@ Page({
       direction = "右滑";
     }
 
-    let lastStr = "#q" + px;
-  
-    console.log(lastStr)
-    let question = self.selectComponent(lastStr);
-    console.log(question)
+    // question.setData({
+    //   style1: "display:block;margin-bottom:30rpx;height:90rpx"
+    // })
     if (px >= 9 && buy == 0 && direction == "左滑") {
       //如果滑动大于10，并且没有购买
       console.log(self.data.zhangjie_id);
@@ -285,6 +285,10 @@ Page({
         height: height
       });
     }
+
+    let lastStr = "#q" + cpx;
+    let question = self.selectComponent(lastStr);
+    console.log(self.selectComponent('#q1'), self.selectComponent('#q2'), self.selectComponent('#q3'), self.selectComponent('#q4'), self.selectComponent('#q5'))
   },
 
   /**

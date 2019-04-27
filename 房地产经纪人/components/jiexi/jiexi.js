@@ -27,7 +27,7 @@ Component({
       observer: function (res) {
         if (res == 1) {
           this.setData({
-            hidden: true
+            // hidden: true
           });
         }
       }
@@ -37,7 +37,9 @@ Component({
   /**
    * 组件的初始数据
    */
-  data: {},
+  data: {
+    
+  },
 
   /**
    * 组件的方法列表

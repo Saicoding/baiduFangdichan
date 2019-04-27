@@ -10,6 +10,7 @@ function zuotiOnload(options, px, circular, myFavorite, res, user, self) {
   let username = user.username;
   let acode = user.acode;
   let buy = res.data.buy;
+  console.log(res.data)
 
   common.initShitiArrayDoneAnswer(shitiArray); //将试题的所有done_daan置空
 

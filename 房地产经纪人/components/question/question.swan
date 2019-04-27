@@ -1,4 +1,4 @@
-<view id="myscroll" class="outContainer" style="{{style3}}">
+<view id="myscroll{{px}}" class="outContainer" style="{{style3}}">
   <scroll-view style="{{style2}}" scroll-y="{{tx == '材料题'?true:false}}" class="mycontainer" bindtap="toogleShow">
     <view class="question-block1">
       <view s-if="(tx =='材料题'&&isModelReal)?false:true" class="qustion-num-text" style="background:{{num_color}}">{{px}}</view>
@@ -7,5 +7,4 @@
     <text class="qustion-text">{{question}}</text>
   </scroll-view>
 </view>
-<view s-if="tx=='材料题'" class="blank" style="{{style1}}">
-</view>
+<view s-if="tx=='材料题'" class="blank" style="{{style1}}"></view>

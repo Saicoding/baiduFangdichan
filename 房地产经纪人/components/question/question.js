@@ -54,8 +54,8 @@ Component({
    */
   methods: {
     toogleShow: function () {
-      if (this.data.tx != "材料题") return;
-      this.triggerEvent('toogleAnimation');
+      // if (this.data.tx != "材料题") return;
+      this.triggerEvent('toogleAnimation',{px:this.data.px});
     }
   }
 });

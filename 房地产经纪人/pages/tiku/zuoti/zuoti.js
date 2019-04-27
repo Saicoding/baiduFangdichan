@@ -320,7 +320,6 @@ Page({
     let currentShiti = sliderShitiArray[current];
 
     let shiti = shitiArray[px - 1]; //本试题对象
-    console.log(shiti.selectAnswer)
     done_daan = shiti.TX == 1 ? e.detail.done_daan : shiti.selectAnswer; //根据单选还是多选得到done_daan
 
     if (shiti.TX == 2 && (shiti.selectAnswer == undefined || shiti.selectAnswer.length == 0)) {

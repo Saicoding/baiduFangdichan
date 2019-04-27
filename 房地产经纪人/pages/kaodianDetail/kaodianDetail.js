@@ -134,7 +134,7 @@ Page({
     let user = self.data.user;
     let username = user.username;
     let acode = user.acode;
-    let preNext = e.currentTarget.dataset.prenext;
+    let preNext = e.currentTarget.dataset.preNext;
     let nextId = self.data.nextId;
     let proId = self.data.proId;
     let kdid = "";
@@ -174,7 +174,6 @@ Page({
       kdid = nextId;
     }
     time.restart(myinterval, mytime); //重新开始计时
-
 
     app.post(API_URL, "action=GetKaodianShow&username=" + username + "&acode=" + acode + "&kdid=" + kdid, true, true, "载入中").then(res => {
 

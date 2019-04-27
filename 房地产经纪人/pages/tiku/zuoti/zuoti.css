@@ -77,6 +77,7 @@ page {
 }
 .cailiaoZuoti{
   text-align: center;
+  margin-top:30rpx;
 }
 
 .cailiaoZuoti-btn{
@@ -85,7 +86,6 @@ page {
   border-radius: 60rpx;
   background: #388ff8;
   color:white;
-  margin-top:40rpx;
   line-height: 80rpx;
 }
 

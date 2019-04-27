@@ -1,4 +1,5 @@
 // pages/mine/set/set.js
+const app = getApp();
 Page({
 
   /**

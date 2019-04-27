@@ -39,7 +39,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    self.setPageInfo();
+    app.setPageInfo();
     swan.setNavigationBarTitle({
       title: '我的收藏'
     }); //设置标题
@@ -85,7 +85,7 @@ Page({
   /**
   * 用户点击右上角分享
   */
-  onShareAppMessage: function () {},
+  onShareAppMessage: function () { },
 
   /**
    * 切换问题的动画
@@ -230,27 +230,6 @@ Page({
       checked: false
     });
 
-    //如果是材料题就判断是否动画
-    if (midShiti.TX == 99) {
-      let str = "#q" + px;
-
-      let questionStr = midShiti.question; //问题的str
-      let height = common.getQuestionHeight(questionStr); //根据问题长度，计算应该多高显示
-
-      height = height >= 400 ? 400 : height;
-
-      let question = self.selectComponent(str);
-
-      animate.blockSpreadAnimation(90, height, question);
-
-      question.setData({ //每切换到材料题就把占位框复位
-        style2: "positon: fixed; left: 20rpx;height:" + height + "rpx" //问题框"   
-      });
-
-      self.setData({
-        height: height
-      });
-    }
   },
 
   /**
@@ -332,28 +311,17 @@ Page({
    */
   CLZuoti: function (e) {
     let self = this;
-
-    let str = "#q" + self.data.px;
-    let question = self.selectComponent(str);
-
     let px = self.data.px;
     let lastSliderIndex = self.data.lastSliderIndex;
     let shitiArray = self.data.shitiArray;
     let sliderShitiArray = self.data.sliderShitiArray;
     let shiti = shitiArray[px - 1];
-    let height = self.data.height;
 
     let sliderShiti = sliderShitiArray[lastSliderIndex];
     shiti.confirm = true;
     sliderShiti.confirm = true;
 
-    question.setData({
-      style2: "positon: fixed; left: 20rpx;height:90rpx" //问题框"   
-    });
-    animate.blockFoldAnimation(height, 90, question);
-    isFold = true;
-
-    share.ifOverHeight(self, sliderShiti.xiaoti[0], sliderShitiArray);
+    // share.ifOverHeight(self, sliderShiti.xiaoti[0], sliderShitiArray);
 
     self.setData({
       shitiArray: shitiArray,
@@ -531,7 +499,7 @@ Page({
       myFavorite: shiti.favorite,
       shitiArray: shitiArray
     });
-    app.post(API_URL, "action=FavoriteShiti&tid=" + shiti.id + "&username=" + username + "&acode=" + acode, false, true, "").then(res => {});
+    app.post(API_URL, "action=FavoriteShiti&tid=" + shiti.id + "&username=" + username + "&acode=" + acode, false, true, "").then(res => { });
   },
   /**
    * 答题板点击编号事件,设置当前题号为点击的题号
@@ -624,27 +592,6 @@ Page({
     self._hideMarkAnswer();
 
     let foldData = undefined; //动画
-
-    //如果是材料题就判断是否动画
-    if (midShiti.TX == 99) {
-      let str = "#q" + px;
-      let questionStr = midShiti.question; //问题的str
-      let height = common.getQuestionHeight(questionStr); //根据问题长度，计算应该多高显示
-
-      height = height >= 400 ? 400 : height;
-
-      let question = self.selectComponent(str);
-
-      animate.blockSpreadAnimation(90, height, question); //占位框动画
-
-      question.setData({
-        style2: "positon: fixed; left: 20rpx;height:" + height + "rpx" //问题框"
-      });
-
-      self.setData({
-        height: height
-      });
-    }
   },
 
   /**

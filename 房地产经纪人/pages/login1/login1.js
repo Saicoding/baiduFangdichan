@@ -88,18 +88,14 @@ Page({
     swan.login({
       success: res => {
         let code = res.code;
-        app.post(API_URL, "action=getSessionKey&code=" + code, false, false, "").then(res => {
+        app.post(API_URL, "action=getSessionKey&code=" + code+"&types=baidu", false, false, "").then(res => {
+          console.log(res)
           let sesstion_key = res.data.sessionKey;
           let openid = res.data.openid;
           buttonClicked = false;
           swan.getUserInfo({
             success: function (res) {
-              let wxid = ""; //openId
-              let session_key = ""; //
-
-              let encryptedData = res.encryptedData;
-              let iv = res.iv;
-              let signature = res.signature; //签名
+              console.log(res)
               let nickname = res.userInfo.nickName; //昵称
               let headurl = res.userInfo.avatarUrl; //头像
               let sex = res.userInfo.gender; //性别
@@ -109,11 +105,9 @@ Page({
               let url = self.data.url; //需要导航的url
 
               //拿到session_key实例化WXBizDataCrypt（）这个函数在下面解密用
-              let pc = new WXBizDataCrypt(appId, sesstion_key);
-              let data = pc.decryptData(encryptedData, iv);
-              let unionid = data.unionId;
-
-              app.post(API_URL, "action=Login_wx&unionId=" + unionid + "&openid=" + openid + "&nickname=" + nickname + "&headurl=" + headurl + "&sex=" + sex, false, false, "").then(res => {
+              console.log("action=Login_bd&openid=" + openid + "&nickname=" + nickname + "&headurl=" + headurl + "&sex=" + sex)
+              app.post(API_URL, "action=Login_bd&openid=" + openid + "&nickname=" + nickname + "&headurl=" + headurl + "&sex=" + sex, false, false, "").then(res => {
+                console.log('res')
                 let user = res.data.list[0];
 
                 swan.setStorage({

@@ -54,7 +54,6 @@
   </view>
 </view>
 
-<!-- <view style="background:red;width:750rpx;"  animation="{{!zhangjie[0].isFolder?zhangjie[0].spreadData:zhangjie[0].folderData}}>hahahahahaasdfh</view> -->
 <view class="zhangjie">
   <scroll-view s-if="isLoaded" style="height:{{scrollHeight}}rpx;" scroll-y="true" scroll-top="{{scroll}}">
     <view style="border:1rpx solid white;">

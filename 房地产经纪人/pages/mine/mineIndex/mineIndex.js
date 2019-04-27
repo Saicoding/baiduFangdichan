@@ -73,7 +73,7 @@ Page({
     app.setPageInfo();
   },
 
-  onReady:function(){
+  onReady: function () {
     let self = this;
     //获得dialog组件
     this.markAnswer = this.selectComponent("#markAnswer");
@@ -95,7 +95,7 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {},
+  onShareAppMessage: function () { },
 
   toogleShow: function (e) {
     let self = this;
@@ -105,7 +105,7 @@ Page({
 
     if (p.isFold) {
       //如果是折叠状态
-      p.height  = p.height*(windowWidth/750);
+      p.height = p.height * (windowWidth / 750);
       p.foldData = animate.foldAnimation(easeInAnimation, p.height);
       p.isFold = false;
       let interval = setInterval(function () {
@@ -222,7 +222,7 @@ Page({
           nums: nums,
           user: user
         });
-
+        console.log(nums.toString())
         if (nums > 0) {
           swan.setTabBarBadge({
             index: 3,
@@ -236,11 +236,8 @@ Page({
       });
     } else {
       //如果没有登录
-
-      //把消息图标调成美元
-      swan.setTabBarBadge({
-        index: 3,
-        text: ""
+      swan.removeTabBarBadge({
+        index: 3
       });
 
       let url = encodeURIComponent('/pages/mine/mineIndex/mineIndex');

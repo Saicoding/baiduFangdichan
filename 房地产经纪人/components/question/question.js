@@ -1,4 +1,5 @@
 // components/question/question.js
+let animate = require('../../common/animate.js');
 Component({
   /**
    * 组件的属性列表
@@ -17,24 +18,30 @@ Component({
       value: false
     },
 
+    shiti: {
+      type: Object,
+      value: null
+    },
+
     tx: {
       type: String,
       value: "",
       observer: function (tx) {
-        let style1 = "";
-        let style2 = "";
-        let style3 = "";
+        let style_block = "";
+        let style_question = "";
+        let style_question_scroll = "";
         if (tx == "材料题") {
-          style1: "display:block;margin-bottom:30rpx;height:90rpx";
-          style3 = "position:fixed;z-index:10000";
+          style_block: "display:block;margin-bottom:30rpx;height:400rpx;";
+          style_question = "position:fixed;z-index:10000";
+          style_question_scroll = "height:400rpx;";
         } else {
-          style1 = "display:none;"; //占位框
-          style3 = "position:block";
+          style_block = "display:none;"; //占位框
+          style_question = "position:block";
         }
         this.setData({
-          style1: style1,
-          style2: style2,
-          style3: style3
+          style_block: style_block,
+          style_question: style_question,
+          style_question_scroll: style_question_scroll
         });
       }
     },
@@ -47,15 +54,29 @@ Component({
   /**
    * 组件的初始数据
    */
-  data: {},
+  data: {
+    isFold: false
+  },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    toogleShow: function () {
-      // if (this.data.tx != "材料题") return;
-      this.triggerEvent('toogleAnimation',{px:this.data.px});
+    toogleShow: function (e) {
+      let self = this;
+      if (this.data.tx == '材料题') {//有材料题才有动画
+        if (this.data.isFold) {
+          animate.blockSpreadAnimation(90, 400, this);
+          this.setData({
+            isFold: false
+          })
+        } else {
+          animate.blockFoldAnimation(400, 90, this);
+          this.setData({
+            isFold: true
+          })
+        }
+      }
     }
   }
 });

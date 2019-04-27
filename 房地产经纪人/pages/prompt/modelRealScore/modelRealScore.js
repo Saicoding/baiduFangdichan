@@ -1,6 +1,7 @@
 // pages/prompt/modelRealScore/modelRealScore.js
 let common = require('../../../common/shiti.js');
 let time = require('../../../common/time.js');
+const app = getApp();
 
 Page({
 

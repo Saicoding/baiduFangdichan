@@ -263,32 +263,6 @@ Page({
       px: px,
       checked: false
     });
-
-    //如果是材料题就判断是否动画
-    if (midShiti.TX == 99) {
-      let str = "#q" + px;
-      share.ifOverHeight(self, midShiti.xiaoti[0], sliderShitiArray);
-      let questionStr = midShiti.question; //问题的str
-      let height = common.getQuestionHeight(questionStr); //根据问题长度，计算应该多高显示
-
-      height = height >= 400 ? 400 : height;
-
-      let question = self.selectComponent(str);
-
-      animate.blockSpreadAnimation(90, height, question);
-
-      question.setData({ //每切换到材料题就把占位框复位
-        style2: "positon: fixed; left: 20rpx;height:" + height + "rpx" //问题框"   
-      });
-
-      self.setData({
-        height: height
-      });
-    }
-
-    let lastStr = "#q" + cpx;
-    let question = self.selectComponent(lastStr);
-    console.log(self.selectComponent('#q1'), self.selectComponent('#q2'), self.selectComponent('#q3'), self.selectComponent('#q4'), self.selectComponent('#q5'))
   },
 
   /**
@@ -389,28 +363,17 @@ Page({
   CLZuoti: function (e) {
     let self = this;
 
-    let str = "#q" + self.data.px;
-    let question = self.selectComponent(str);
-
     let px = self.data.px;
     let lastSliderIndex = self.data.lastSliderIndex;
     let shitiArray = self.data.shitiArray;
     let sliderShitiArray = self.data.sliderShitiArray;
     let shiti = shitiArray[px - 1];
-    let height = self.data.height;
 
     let sliderShiti = sliderShitiArray[lastSliderIndex];
     shiti.confirm = true;
     sliderShiti.confirm = true;
 
-    question.setData({
-      style2: "positon: fixed; left: 20rpx;height:90rpx" //问题框"   
-    });
-
-    animate.blockFoldAnimation(height, 90, question);
-    isFold = true;
-
-    share.ifOverHeight(self, sliderShiti.xiaoti[0], sliderShitiArray);
+    // share.ifOverHeight(self, sliderShiti.xiaoti[0], sliderShitiArray);
 
     self.setData({
       shitiArray: shitiArray,
@@ -719,27 +682,6 @@ Page({
     self._hideMarkAnswer();
 
     let foldData = undefined; //动画
-
-    //如果是材料题就判断是否动画
-    if (midShiti.TX == 99) {
-      let str = "#q" + px;
-      let questionStr = midShiti.question; //问题的str
-      let height = common.getQuestionHeight(questionStr); //根据问题长度，计算应该多高显示
-
-      height = height >= 400 ? 400 : height;
-
-      let question = self.selectComponent(str);
-
-      animate.blockSpreadAnimation(90, height, question); //占位框动画
-
-      question.setData({
-        style2: "positon: fixed; left: 20rpx;height:" + height + "rpx" //问题框"
-      });
-
-      self.setData({
-        height: height
-      });
-    }
   },
   /**
    * 小题滑块改动时

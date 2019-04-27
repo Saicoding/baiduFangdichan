@@ -245,28 +245,6 @@ Page({
         username: username, //用户账号名称
         acode: acode //用户唯一码
       });
-
-      //如果是材料题就有动画
-      if (midShiti.TX == 99) {
-        let str = "#q" + px;
-        let questionStr = midShiti.question; //问题的str
-        let height = common.getQuestionHeight(questionStr); //根据问题长度，计算应该多高显示
-
-        height = height >= 400 ? 400 : height;
-
-        let question = self.selectComponent(str);
-
-        animate.blockSpreadAnimation(90, height, question); //占位框动画
-
-        question.setData({
-          style2: "positon: fixed; left: 20rpx;height:" + height + "rpx" //问题框"
-        });
-
-        self.setData({
-          height: height
-        });
-      }
-
       swan.hideLoading();
     }).catch(errMsg => {
       console.log(errMsg);
@@ -356,15 +334,6 @@ Page({
     let circular = self.data.circular;
 
     isFold = false;
-
-    let lastStr = "#q" + px;
-    console.log(shitiArray[px-1].px)
-
-    let question = self.selectComponent(lastStr);
-
-    question.setData({
-      style1: "display:block;margin-bottom:30rpx;height:90rpx"
-    });
 
     //判断滑动方向
     if (lastSliderIndex == 0 && current == 1 || lastSliderIndex == 1 && current == 2 || lastSliderIndex == 2 && current == 0) {
@@ -462,28 +431,6 @@ Page({
       shitiNum: shitiNum,
       checked: false
     });
-
-    //如果是材料题就判断是否动画
-    if (midShiti.TX == 99) {
-      let str = "#q" + px;
-      share.ifOverHeight(self, midShiti.xiaoti[current], sliderShitiArray);
-      let questionStr = midShiti.question; //问题的str
-      let height = common.getQuestionHeight(questionStr); //根据问题长度，计算应该多高显示
-
-      height = height >= 400 ? 400 : height;
-
-      let question = self.selectComponent(str);
-
-      animate.blockSpreadAnimation(90, height, question);
-
-      question.setData({ //每切换到材料题就把占位框复位
-        style2: "positon: fixed; left: 20rpx;height:" + height + "rpx" //问题框"   
-      });
-
-      self.setData({
-        height: height
-      });
-    }
   },
   /**
    * 小题滑动事件
@@ -553,27 +500,17 @@ Page({
   CLZuoti: function (e) {
     let self = this;
 
-    let str = "#q" + self.data.px;
-    let question = self.selectComponent(str);
-
     let px = self.data.px;
     let lastSliderIndex = self.data.lastSliderIndex;
     let shitiArray = self.data.shitiArray;
     let sliderShitiArray = self.data.sliderShitiArray;
     let shiti = shitiArray[px - 1];
-    let height = self.data.height;
 
     let sliderShiti = sliderShitiArray[lastSliderIndex];
     shiti.confirm = true;
     sliderShiti.confirm = true;
 
-    question.setData({ //每切换到材料题就把占位框复位
-      style2: "positon: fixed; left: 20rpx;height:90rpx" //问题框"   
-    });
-    animate.blockFoldAnimation(height, 90, question);
-    isFold = true;
-
-    share.ifOverHeight(self, sliderShiti.xiaoti[0], sliderShitiArray);
+    // share.ifOverHeight(self, sliderShiti.xiaoti[0], sliderShitiArray);
 
     self.setData({
       shitiArray: shitiArray,
@@ -856,27 +793,6 @@ Page({
       checked: false
     });
     self._hideMarkAnswer();
-
-    //如果是材料题就判断是否动画
-    if (midShiti.TX == 99) {
-      let str = "#q" + px;
-      let questionStr = midShiti.question; //问题的str
-      let height = common.getQuestionHeight(questionStr); //根据问题长度，计算应该多高显示
-
-      height = height >= 400 ? 400 : height;
-
-      let question = self.selectComponent(str);
-
-      animate.blockSpreadAnimation(90, height, question); //占位框动画
-
-      question.setData({
-        style2: "positon: fixed; left: 20rpx;height:" + height + "rpx" //问题框"
-      });
-
-      self.setData({
-        height: height
-      });
-    }
   },
 
   /**

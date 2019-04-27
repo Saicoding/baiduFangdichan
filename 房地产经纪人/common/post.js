@@ -100,6 +100,8 @@ function zuotiOnload(options, px, circular, myFavorite, res, user, self) {
     });
   }
 
+  console.log(midShiti)
+
   self.setData({
     z_id: options.z_id, //点击组件的id编号
     zhangjie_id: options.zhangjie_id, //章节的id号，用于本地存储的key
@@ -119,29 +121,6 @@ function zuotiOnload(options, px, circular, myFavorite, res, user, self) {
     username: username, //用户账号名称
     acode: acode //用户唯一码
   });
-
-  //如果是材料题就有动画
-  if (midShiti.TX == 99) {
-    let str = "#q" + px;
-    share.ifOverHeight(self, midShiti.xiaoti[0], sliderShitiArray);
-    let questionStr = midShiti.question; //问题的str
-    let height = common.getQuestionHeight(questionStr); //根据问题长度，计算应该多高显示
-
-    height = height >= 400 ? 400 : height;
-
-    let question = self.selectComponent(str);
-
-    animate.blockSpreadAnimation(90, height, question); //占位框动画
-
-    question.setData({
-      style2: "positon: fixed; left: 20rpx;height:" + height + "rpx" //问题框"
-    });
-
-    self.setData({
-      height: height
-    });
-  }
-
   swan.hideLoading();
 }
 
@@ -191,27 +170,6 @@ function markOnload(options, px, circular, myFavorite, res, username, acode, sel
     username: username, //用户账号名称
     acode: acode //用户唯一码
   });
-
-  //如果是材料题就有动画
-  if (midShiti.TX == 99) {
-    let str = "#q" + px;
-    let questionStr = midShiti.question; //问题的str
-    let height = common.getQuestionHeight(questionStr); //根据问题长度，计算应该多高显示
-
-    height = height >= 400 ? 400 : height;
-
-    let question = self.selectComponent(str);
-
-    animate.blockSpreadAnimation(90, height, question); //占位框动画
-
-    question.setData({
-      style2: "positon: fixed; left: 20rpx;height:" + height + "rpx" //问题框"
-    });
-
-    self.setData({
-      height: height
-    });
-  }
 
   swan.hideLoading();
 }
@@ -271,27 +229,6 @@ function wrongOnload(options, px, circular, myFavorite, res, user, requesttime, 
     requesttime: requesttime, //第一次请求的时间
     acode: acode //用户唯一码
   });
-
-  //如果是材料题就有动画
-  if (midShiti.TX == 99) {
-    let str = "#q" + px;
-    let questionStr = midShiti.question; //问题的str
-    let height = common.getQuestionHeight(questionStr); //根据问题长度，计算应该多高显示
-
-    height = height >= 400 ? 400 : height;
-
-    let question = self.selectComponent(str);
-
-    animate.blockSpreadAnimation(90, height, question); //占位框动画
-
-    question.setData({
-      style2: "positon: fixed; left: 20rpx;height:" + height + "rpx" //问题框"
-    });
-
-    self.setData({
-      height: height
-    });
-  }
 }
 
 module.exports = {

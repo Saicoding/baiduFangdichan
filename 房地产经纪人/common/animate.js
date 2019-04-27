@@ -80,7 +80,7 @@ function questionSpreadAnimation(min, max, question) {
       min = max;
     }
     question.setData({
-      style2: "positon: fixed; left: 20rpx;height:" + min + "rpx"
+      style_question_scroll: "height:" + min + "rpx"
     });
   }, 40);
 }
@@ -96,7 +96,8 @@ function blockFoldAnimation(max, min, question) {
       max = min;
     }
     question.setData({
-      style1: "display:block;margin-bottom:30rpx;height:" + max + "rpx"
+      style_question_scroll: "display:block;height:" + max + "rpx",
+      style_block:"display:block;margin-bottom:30rpx;height:" + max + "rpx"
     });
   }, 40);
 }
@@ -112,7 +113,8 @@ function blockSpreadAnimation(min, max, question) {
       min = max;
     }
     question.setData({
-      style1: "display:block;margin-bottom:30rpx;height:" + min + "rpx"
+      style_question_scroll: "display:block;height:" + min + "rpx",
+      style_block:"display:block;margin-bottom:30rpx;height:" + min + "rpx"
     });
   }, 40);
 }

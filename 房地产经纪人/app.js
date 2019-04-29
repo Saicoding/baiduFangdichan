@@ -46,6 +46,7 @@ App({
           'content-type': 'application/x-www-form-urlencoded'
         },
         success: function (res) {
+          console.log(res)
           //服务器返回数据
           if (ifShow) {
             //隐藏载入

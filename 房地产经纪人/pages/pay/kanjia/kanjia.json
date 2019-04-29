@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "kanjia-model": "/components/kanjiaModel/kanjiaModel"
+    "kanjiamodel": "/components/kanjiaModel/kanjiaModel"
   }
 }

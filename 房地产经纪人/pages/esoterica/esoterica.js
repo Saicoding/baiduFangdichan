@@ -89,7 +89,7 @@ Page({
   /**
   * 用户点击右上角分享
   */
-  onShareAppMessage: function () {},
+  onShareAppMessage: function () { },
 
   bindPickerChange: function (e) {
     let self = this;
@@ -140,11 +140,19 @@ Page({
       success: function (res) {
         //如果已经登陆过
         let user = res.data;
-        let zcode = user.zcode;
-        let LoginRandom = user.Login_random;
-        let pwd = user.pwd;
+        if (user) {
+          let zcode = user.zcode;
+          let LoginRandom = user.Login_random;
+          let pwd = user.pwd;
 
-        validate.validateDPLLoginOrPwdChange(zcode, LoginRandom, pwd, url1, url, true); //验证重复登录
+          validate.validateDPLLoginOrPwdChange(zcode, LoginRandom, pwd, url1, url, true); //验证重复登录
+        } else {
+          //如果没有username就跳转到登录界面
+          swan.navigateTo({
+            url: '/pages/login1/login1?url=' + url + "&ifGoPage=true"
+          });
+        }
+
       },
       fail: function (res) {
         //如果没有username就跳转到登录界面

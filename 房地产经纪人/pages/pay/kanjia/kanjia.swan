@@ -69,4 +69,4 @@
 </view>
 
 <!-- 弹窗 -->
-<kanjiaModel money="{{money}}" id="kanjiaModel" bindaddKanjia="_addKanjia" bindGOxuexi="_GOxuexi"></kanjiaModel>
+<kanjiamodel money="{{money}}" id="kanjiaModel" bindaddKanjia="_addKanjia" bindGOxuexi="_GOxuexi"></kanjiamodel>

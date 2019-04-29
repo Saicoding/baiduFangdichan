@@ -84,8 +84,7 @@ App({
               isLoaded: true,
               message: message
             });
-          } else if (status < 0) {
-            console.log('异常', url + postData);
+          } else {
             swan.showToast({
               title: message,
               icon: 'none',
@@ -127,7 +126,7 @@ App({
       shares: '8',
       followers: '35',
       success: function () {
-      
+
       }
     })
   },
@@ -139,6 +138,9 @@ App({
     // wx.clearStorage();
     // wx.clearStorage("user")
     // 获取用户信息
+    swan.setEnableDebug({
+      enableDebug: true
+    })
     swan.getSetting({
       success: res => {
         // if (res.authSetting['scope.userInfo']) {

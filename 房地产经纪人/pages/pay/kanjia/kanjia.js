@@ -37,54 +37,59 @@ Page({
     me = me == "1" ? 1 : 0;
 
     let user = swan.getStorageSync('user');
-    let isLogin = swan.isLoginSync().isLogin;
-    this.setData({
-      test: mykan_id
-    })
 
-    if (me == 0) {
-      //没有用户
-      app.post(API_URL, "action=KanjiaInfo&kan_id=" + mykan_id, false, false, "").then(res => {
-        let result = res.data.data[0];
-        let endtime = result.endtime; //砍价截止时间
-        let title = result.title; //抢购产品
-        let money_now = result.money_now; //现在的价格
+    swan.getSwanId({//获得设备唯一码
+      success: function (res) {
+        let swanid = res.data.swanid;
+        console.log(swanid,'haha')
+        if (me == 0) {
+          //没有用户
+          app.post(API_URL, "action=KanjiaInfo&kan_id=" + mykan_id, false, false, "").then(res => {
+            let result = res.data.data[0];
+            let endtime = result.endtime; //砍价截止时间
+            let title = result.title; //抢购产品
+            let money_now = result.money_now; //现在的价格
 
-        self.setData({
-          test1: money_now
-        })
-        let money_zong = result.money_zong; //总价格
+            self.setData({
+              test1: money_now
+            })
+            let money_zong = result.money_zong; //总价格
 
-        let nowLength = self.getPostionOjb(money_now, money_zong);
+            let nowLength = self.getPostionOjb(money_now, money_zong);
 
-        let kan_list = result.kan_list;
+            let kan_list = result.kan_list;
 
-        //开始计时
-        leftTime = time.leftTime2(endtime); //剩余时间(秒数)
+            //开始计时
+            leftTime = time.leftTime2(endtime); //剩余时间(秒数)
 
-        let interval = setInterval(res => {
-          leftTime--;
-          let timeObj = time.getTimeObj(leftTime);
-          self.setData({
-            timeObj: timeObj
+            let interval = setInterval(res => {
+              leftTime--;
+              let timeObj = time.getTimeObj(leftTime);
+              self.setData({
+                timeObj: timeObj
+              });
+            }, 1000);
+
+            let iskaned = self.getIskaned(swanid, kan_list); //是否已经砍过
+            console.log('是否砍过', iskaned, swanid)
+
+            self.setData({
+              endtime: endtime,
+              swanid: swanid,
+              nowLength: nowLength,
+              interval: interval,
+              title: title,
+              money_now: money_now,
+              money_zong: money_zong,
+              first: false,
+              kan_list: kan_list,
+              iskaned: iskaned,
+              loaded: true
+            });
           });
-        }, 1000);
-
-        self.setData({
-          endtime: endtime,
-          nowLength: nowLength,
-          interval: interval,
-          title: title,
-          money_now: money_now,
-          money_zong: money_zong,
-          first: false,
-          mykan_id: mykan_id,
-          kan_list: kan_list,
-          // iskaned: iskaned,
-          loaded: true
-        });
-      });
-    }
+        }
+      }
+    });
 
     self.setData({
       me: me,
@@ -136,9 +141,11 @@ Page({
     let first = self.data.first; //是否是第一次渲染页面
 
     buttonClicked = false;
-
+    console.log(user)
+    console.log(first)
     if ((isReLoad || first) && user != "" && me == 1) {
       //如果user = "" 
+      console.log("action=KanjiaCreate&loginrandom=" + loginrandom + "&zcode=" + zcode + "&taocan=" + taocan)
       app.post(API_URL, "action=KanjiaCreate&loginrandom=" + loginrandom + "&zcode=" + zcode + "&taocan=" + taocan, false, false, "").then(res1 => {
         let kan_id = res1.data.data[0].kan_id;
 
@@ -236,6 +243,7 @@ Page({
   kanjia: function (e) {
     let self = this;
     let loaded = self.data.loaded;
+    let swanid = self.data.swanid;
     if (!loaded) {
       swan.showToast({
         title: '还没有载入完成,请等待2秒',
@@ -245,48 +253,55 @@ Page({
       return;
     }
 
-    swan.login({
-      success: res => {
-        let code = res.code;
-        app.post(API_URL, "action=getSessionKey&code=" + code + "&types=baidu", false, false, "").then(res => {
-          let sesstion_key = res.data.sessionKey;
-          let openid = res.data.openid;
-          self.setData({
-            test2: '成功'
-          })
-          swan.getUserInfo({
-            success: function (res) {
-              let nickname = res.userInfo.nickName; //昵称
-              let headurl = res.userInfo.avatarUrl; //头像
-              //限制连续点击
-              let kan_id = self.data.mykan_id;
-
-              self.setData({
-                test2: 'haha' + nickname + headurl
-              })
-
-              app.post(API_URL, "action=KanjiaRecords&kan_id=" + kan_id + "&unionid=" + openid + "&headurl=" + headurl + "&nickname=" + nickname, false, false, "").then(res => {
-                let money = res.data.data[0].money;
-                let money_now = self.data.money_now - money; //现在的价格
-                let money_zong = self.data.money_zong; //总价格
-                self.setData({
-                  test2: 'heieh' + nickname + headurl
-                })
-                let iskaned = self.getIskaned(openid, self.data.kan_list); //是否已经砍过
-                let nowLength = self.getPostionOjb(money_now, money_zong); //更新进度条
-                self.kanjiaModel.showDialog();
-                self.setData({
-                  isKaned: true, //是否已经砍了
-                  money: money,
-                  nowLength: nowLength,
-                  iskaned:iskaned
-                });
-              });
-            }
+    //判断有没有登录
+    let isLogin = swan.isLoginSync();
+    console.log(isLogin)
+    if (isLogin.isLogin) {
+      swan.getUserInfo({
+        success: function (res) {
+          let nickname = res.userInfo.nickName; //昵称
+          let headurl = res.userInfo.avatarUrl; //头像
+          //限制连续点击
+          let kan_id = self.data.mykan_id;
+          console.log("action=KanjiaRecords&kan_id=" + kan_id + "&unionid=" + swanid + "&headurl=" + headurl + "&nickname=" + nickname)
+          app.post(API_URL, "action=KanjiaRecords&kan_id=" + kan_id + "&unionid=" + swanid + "&headurl=" + headurl + "&nickname=" + nickname, false, false, "").then(res => {
+            let money = res.data.data[0].money;
+            let money_now = self.data.money_now - money; //现在的价格
+            let money_zong = self.data.money_zong; //总价格             
+            let nowLength = self.getPostionOjb(money_now, money_zong); //更新进度条
+            self.kanjiaModel.showDialog();
+            self.setData({
+              isKaned: true, //是否已经砍了
+              money: money,
+              nowLength: nowLength,
+              iskaned: iskaned,
+              nickname: nickname,
+              headurl: headurl
+            });
           });
+        }
+      });
+    } else {//如果没有登录
+      let nickname = swanid;
+      let headurl = "/imgs/my_error.jpg";
+      //限制连续点击
+      let kan_id = self.data.mykan_id;
+      app.post(API_URL, "action=KanjiaRecords&kan_id=" + kan_id + "&unionid=" + swanid + "&headurl=" + headurl + "&nickname=" + nickname, false, false, "").then(res => {
+        let money = res.data.data[0].money;
+        let money_now = self.data.money_now - money; //现在的价格
+        let money_zong = self.data.money_zong; //总价格             
+        let nowLength = self.getPostionOjb(money_now, money_zong); //更新进度条
+        self.kanjiaModel.showDialog();
+        self.setData({
+          isKaned: true, //是否已经砍了
+          money: money,
+          nowLength: nowLength,
+          iskaned: iskaned,
+          nickname: nickname,
+          headurl: headurl
         });
-      }
-    });
+      });
+    }
   },
 
   /**

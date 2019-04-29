@@ -93,12 +93,12 @@ Page({
                     self.setData({
                       zhangjie: zhangjie
                     });
-                  }else{
-                                     //如果没有本地存储就初始化
-                  swan.setStorage({
-                    key: "shiti" + self.data.zhangjie_id + user.username,
-                    data: answer_nums_array
-                  });
+                  } else {
+                    //如果没有本地存储就初始化
+                    swan.setStorage({
+                      key: "shiti" + self.data.zhangjie_id + user.username,
+                      data: answer_nums_array
+                    });
                   }
                 },
                 fail: function () {
@@ -799,6 +799,17 @@ Page({
         });
       }
     });
+    swan.showFavoriteGuide({
+      type: 'bar-autohide',
+      content: '一键添加到我的小程序',
+      success(res) {
+        console.log('添加成功：', res);
+      },
+      fail(err) {
+        console.log('添加失败：', err);
+      }
+    })
+
   },
 
   /**

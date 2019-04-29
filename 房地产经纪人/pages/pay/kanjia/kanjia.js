@@ -37,87 +37,90 @@ Page({
     me = me == "1" ? 1 : 0;
 
     let user = swan.getStorageSync('user');
+    let isLogin = swan.isLoginSync().isLogin;
+    if (isLogin) {
+      swan.login({
+        success: res => {
+          let code = res.code;
+          app.post(API_URL, "action=getSessionKey&code=" + code+"&types=baidu", false, false, "").then(res => {
+            let sesstion_key = res.data.sessionKey;
+            let openid = res.data.openid;
 
-    swan.login({
-      success: res => {
-        let code = res.code;
-        app.post(API_URL, "action=getSessionKey&code=" + code, false, false, "").then(res => {
-          let sesstion_key = res.data.sessionKey;
-          let openid = res.data.openid;
+            swan.getUserInfo({
+              success: function (res) {
+                let signature = res.signature; //签名
+                let nickname = res.userInfo.nickName; //昵称
+                let headurl = res.userInfo.avatarUrl; //头像
+                let sex = res.userInfo.gender; //性别
 
-          swan.getUserInfo({
-            success: function (res) {
-              let wxid = ""; //openId
-              let session_key = ""; //
+                if (me == 0) {
+                  //没有用户
+                  app.post(API_URL, "action=KanjiaInfo&kan_id=" + mykan_id, false, false, "").then(res => {
+                    let result = res.data.data[0];
+                    let endtime = result.endtime; //砍价截止时间
+                    let title = result.title; //抢购产品
+                    let money_now = result.money_now; //现在的价格
+                    let money_zong = result.money_zong; //总价格
 
-              let encryptedData = res.encryptedData;
-              let iv = res.iv;
-              let signature = res.signature; //签名
-              let nickname = res.userInfo.nickName; //昵称
-              let headurl = res.userInfo.avatarUrl; //头像
-              let sex = res.userInfo.gender; //性别
+                    let nowLength = self.getPostionOjb(money_now, money_zong);
 
-              //拿到session_key实例化WXBizDataCrypt（）这个函数在下面解密用
-              let pc = new WXBizDataCrypt(appId, sesstion_key);
-              let data = pc.decryptData(encryptedData, iv);
-              let unionid = data.unionId;
+                    let kan_list = result.kan_list;
+                    let iskaned = self.getIskaned(unionid, kan_list); //是否已经砍过
 
-              if (me == 0) {
-                //没有用户
+                    //开始计时
+                    leftTime = time.leftTime2(endtime); //剩余时间(秒数)
 
-                app.post(API_URL, "action=KanjiaInfo&kan_id=" + mykan_id, false, false, "").then(res => {
-                  let result = res.data.data[0];
-                  let endtime = result.endtime; //砍价截止时间
-                  let title = result.title; //抢购产品
-                  let money_now = result.money_now; //现在的价格
-                  let money_zong = result.money_zong; //总价格
+                    let interval = setInterval(res => {
+                      leftTime--;
+                      let timeObj = time.getTimeObj(leftTime);
+                      self.setData({
+                        timeObj: timeObj
+                      });
+                    }, 1000);
 
-                  let nowLength = self.getPostionOjb(money_now, money_zong);
-
-                  let kan_list = result.kan_list;
-                  let iskaned = self.getIskaned(unionid, kan_list); //是否已经砍过
-
-                  //开始计时
-                  leftTime = time.leftTime2(endtime); //剩余时间(秒数)
-
-                  let interval = setInterval(res => {
-                    leftTime--;
-                    let timeObj = time.getTimeObj(leftTime);
                     self.setData({
-                      timeObj: timeObj
+                      endtime: endtime,
+                      nowLength: nowLength,
+                      interval: interval,
+                      title: title,
+                      money_now: money_now,
+                      money_zong: money_zong,
+                      first: false,
+                      mykan_id: mykan_id,
+                      kan_list: kan_list,
+                      iskaned: iskaned,
+                      unionid: unionid,
+                      headurl: headurl,
+                      nickname: nickname,
+                      loaded: true
                     });
-                  }, 1000);
-
-                  self.setData({
-                    endtime: endtime,
-                    nowLength: nowLength,
-                    interval: interval,
-                    title: title,
-                    money_now: money_now,
-                    money_zong: money_zong,
-                    first: false,
-                    mykan_id: mykan_id,
-                    kan_list: kan_list,
-                    iskaned: iskaned,
-                    unionid: unionid,
-                    headurl: headurl,
-                    nickname: nickname,
-                    loaded: true
                   });
-                });
+                }
               }
-            }
+            });
           });
-        });
-      }
-    });
-
-    self.setData({
-      me: me,
-      taocan: taocan,
-      first: true,
-      mykan_id: mykan_id
-    });
+        }
+      });
+      self.setData({
+        me: me,
+        taocan: taocan,
+        first: true,
+        mykan_id: mykan_id
+      });
+    }else{
+      swan.showModal({
+        title: '提示',
+        content: '您的百度APP还未登录',
+        confirmText:'登录',
+        success:function(e){
+          if(e.confirm){
+            swan.navigateTo({
+              url: '/pages/login1/login1'
+            });
+          }
+        }
+      });
+    }
   },
   /**
    * 生命周期函数
@@ -216,7 +219,7 @@ Page({
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {},
+  onHide: function () { },
 
   /**
    * 生命周期函数--监听页面卸载

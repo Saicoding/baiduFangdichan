@@ -28,7 +28,7 @@ App({
       postData.signature = that.makeSign(postData);
       */
       //网络请求
-
+      let myPostData = postData;
       postData = postData.split('&')
       let obj = {};
       for (let i = 0; i < postData.length; i++) {
@@ -46,7 +46,6 @@ App({
           'content-type': 'application/x-www-form-urlencoded'
         },
         success: function (res) {
-          console.log(res)
           //服务器返回数据
           if (ifShow) {
             //隐藏载入
@@ -85,6 +84,7 @@ App({
               message: message
             });
           } else {
+            console.log(url+'?'+myPostData)
             swan.showToast({
               title: message,
               icon: 'none',

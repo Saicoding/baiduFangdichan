@@ -41,7 +41,6 @@ Page({
     swan.getSwanId({//获得设备唯一码
       success: function (res) {
         let swanid = res.data.swanid;
-        console.log(swanid,'haha')
         if (me == 0) {
           //没有用户
           app.post(API_URL, "action=KanjiaInfo&kan_id=" + mykan_id, false, false, "").then(res => {
@@ -50,9 +49,7 @@ Page({
             let title = result.title; //抢购产品
             let money_now = result.money_now; //现在的价格
 
-            self.setData({
-              test1: money_now
-            })
+            console.log('ok')
             let money_zong = result.money_zong; //总价格
 
             let nowLength = self.getPostionOjb(money_now, money_zong);
@@ -71,7 +68,6 @@ Page({
             }, 1000);
 
             let iskaned = self.getIskaned(swanid, kan_list); //是否已经砍过
-            console.log('是否砍过', iskaned, swanid)
 
             self.setData({
               endtime: endtime,
@@ -141,11 +137,8 @@ Page({
     let first = self.data.first; //是否是第一次渲染页面
 
     buttonClicked = false;
-    console.log(user)
-    console.log(first)
     if ((isReLoad || first) && user != "" && me == 1) {
       //如果user = "" 
-      console.log("action=KanjiaCreate&loginrandom=" + loginrandom + "&zcode=" + zcode + "&taocan=" + taocan)
       app.post(API_URL, "action=KanjiaCreate&loginrandom=" + loginrandom + "&zcode=" + zcode + "&taocan=" + taocan, false, false, "").then(res1 => {
         let kan_id = res1.data.data[0].kan_id;
 
@@ -155,7 +148,6 @@ Page({
           let title = result.title; //抢购产品
           let money_now = result.money_now; //现在的价格
           let money_zong = result.money_zong; //总价格
-
           let nowLength = self.getPostionOjb(money_now, money_zong);
 
           let kan_list = result.kan_list;
@@ -177,7 +169,7 @@ Page({
               timeObj: timeObj
             });
           }, 1000);
-
+          console.log(money_now)
           self.setData({
             endtime: endtime,
             nowLength: nowLength,
@@ -255,7 +247,6 @@ Page({
 
     //判断有没有登录
     let isLogin = swan.isLoginSync();
-    console.log(isLogin)
     if (isLogin.isLogin) {
       swan.getUserInfo({
         success: function (res) {
@@ -263,7 +254,6 @@ Page({
           let headurl = res.userInfo.avatarUrl; //头像
           //限制连续点击
           let kan_id = self.data.mykan_id;
-          console.log("action=KanjiaRecords&kan_id=" + kan_id + "&unionid=" + swanid + "&headurl=" + headurl + "&nickname=" + nickname)
           app.post(API_URL, "action=KanjiaRecords&kan_id=" + kan_id + "&unionid=" + swanid + "&headurl=" + headurl + "&nickname=" + nickname, false, false, "").then(res => {
             let money = res.data.data[0].money;
             let money_now = self.data.money_now - money; //现在的价格

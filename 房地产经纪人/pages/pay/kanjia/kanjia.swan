@@ -8,7 +8,7 @@
     <view class="mid-title">{{me==1?'我':'他'}}正在抢购 <span style="color:#4267f7">{{title}} </span>砍价中...</view>
     <!-- 价格方框和三角 -->
     <view class="mid-price" style="margin-left:{{500-nowLength-65}}rpx;">
-      <view class="mid-price-text">¥
+      <view class="mid-price-text" style = "display:flex;"><view>¥</view>
         <span style="font-weight: bolder">{{money_now}}</span>
       </view>
       <view class="mid-price-triangle"></view>

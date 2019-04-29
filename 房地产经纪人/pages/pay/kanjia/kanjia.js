@@ -38,89 +38,60 @@ Page({
 
     let user = swan.getStorageSync('user');
     let isLogin = swan.isLoginSync().isLogin;
-    if (isLogin) {
-      swan.login({
-        success: res => {
-          let code = res.code;
-          app.post(API_URL, "action=getSessionKey&code=" + code+"&types=baidu", false, false, "").then(res => {
-            let sesstion_key = res.data.sessionKey;
-            let openid = res.data.openid;
+    this.setData({
+      test: mykan_id
+    })
 
-            swan.getUserInfo({
-              success: function (res) {
-                let signature = res.signature; //签名
-                let nickname = res.userInfo.nickName; //昵称
-                let headurl = res.userInfo.avatarUrl; //头像
-                let sex = res.userInfo.gender; //性别
+    if (me == 0) {
+      //没有用户
+      app.post(API_URL, "action=KanjiaInfo&kan_id=" + mykan_id, false, false, "").then(res => {
+        let result = res.data.data[0];
+        let endtime = result.endtime; //砍价截止时间
+        let title = result.title; //抢购产品
+        let money_now = result.money_now; //现在的价格
 
-                if (me == 0) {
-                  //没有用户
-                  app.post(API_URL, "action=KanjiaInfo&kan_id=" + mykan_id, false, false, "").then(res => {
-                    let result = res.data.data[0];
-                    let endtime = result.endtime; //砍价截止时间
-                    let title = result.title; //抢购产品
-                    let money_now = result.money_now; //现在的价格
-                    let money_zong = result.money_zong; //总价格
+        self.setData({
+          test1: money_now
+        })
+        let money_zong = result.money_zong; //总价格
 
-                    let nowLength = self.getPostionOjb(money_now, money_zong);
+        let nowLength = self.getPostionOjb(money_now, money_zong);
 
-                    let kan_list = result.kan_list;
-                    let iskaned = self.getIskaned(unionid, kan_list); //是否已经砍过
+        let kan_list = result.kan_list;
 
-                    //开始计时
-                    leftTime = time.leftTime2(endtime); //剩余时间(秒数)
+        //开始计时
+        leftTime = time.leftTime2(endtime); //剩余时间(秒数)
 
-                    let interval = setInterval(res => {
-                      leftTime--;
-                      let timeObj = time.getTimeObj(leftTime);
-                      self.setData({
-                        timeObj: timeObj
-                      });
-                    }, 1000);
-
-                    self.setData({
-                      endtime: endtime,
-                      nowLength: nowLength,
-                      interval: interval,
-                      title: title,
-                      money_now: money_now,
-                      money_zong: money_zong,
-                      first: false,
-                      mykan_id: mykan_id,
-                      kan_list: kan_list,
-                      iskaned: iskaned,
-                      unionid: unionid,
-                      headurl: headurl,
-                      nickname: nickname,
-                      loaded: true
-                    });
-                  });
-                }
-              }
-            });
+        let interval = setInterval(res => {
+          leftTime--;
+          let timeObj = time.getTimeObj(leftTime);
+          self.setData({
+            timeObj: timeObj
           });
-        }
-      });
-      self.setData({
-        me: me,
-        taocan: taocan,
-        first: true,
-        mykan_id: mykan_id
-      });
-    }else{
-      swan.showModal({
-        title: '提示',
-        content: '您的百度APP还未登录',
-        confirmText:'登录',
-        success:function(e){
-          if(e.confirm){
-            swan.navigateTo({
-              url: '/pages/login1/login1'
-            });
-          }
-        }
+        }, 1000);
+
+        self.setData({
+          endtime: endtime,
+          nowLength: nowLength,
+          interval: interval,
+          title: title,
+          money_now: money_now,
+          money_zong: money_zong,
+          first: false,
+          mykan_id: mykan_id,
+          kan_list: kan_list,
+          // iskaned: iskaned,
+          loaded: true
+        });
       });
     }
+
+    self.setData({
+      me: me,
+      taocan: taocan,
+      first: true,
+      mykan_id: mykan_id
+    });
   },
   /**
    * 生命周期函数
@@ -274,24 +245,47 @@ Page({
       return;
     }
 
-    //限制连续点击
-    let kan_id = self.data.mykan_id;
-    let unionid = self.data.unionid;
-    let headurl = self.data.headurl;
-    let nickname = self.data.nickname;
+    swan.login({
+      success: res => {
+        let code = res.code;
+        app.post(API_URL, "action=getSessionKey&code=" + code + "&types=baidu", false, false, "").then(res => {
+          let sesstion_key = res.data.sessionKey;
+          let openid = res.data.openid;
+          self.setData({
+            test2: '成功'
+          })
+          swan.getUserInfo({
+            success: function (res) {
+              let nickname = res.userInfo.nickName; //昵称
+              let headurl = res.userInfo.avatarUrl; //头像
+              //限制连续点击
+              let kan_id = self.data.mykan_id;
 
-    app.post(API_URL, "action=KanjiaRecords&kan_id=" + kan_id + "&unionid=" + unionid + "&headurl=" + headurl + "&nickname=" + nickname, false, false, "").then(res => {
-      let money = res.data.data[0].money;
-      let money_now = self.data.money_now - money; //现在的价格
-      let money_zong = self.data.money_zong; //总价格
+              self.setData({
+                test2: 'haha' + nickname + headurl
+              })
 
-      let nowLength = self.getPostionOjb(money_now, money_zong); //更新进度条
-      self.kanjiaModel.showDialog();
-      self.setData({
-        isKaned: true, //是否已经砍了
-        money: money,
-        nowLength: nowLength
-      });
+              app.post(API_URL, "action=KanjiaRecords&kan_id=" + kan_id + "&unionid=" + openid + "&headurl=" + headurl + "&nickname=" + nickname, false, false, "").then(res => {
+                let money = res.data.data[0].money;
+                let money_now = self.data.money_now - money; //现在的价格
+                let money_zong = self.data.money_zong; //总价格
+                self.setData({
+                  test2: 'heieh' + nickname + headurl
+                })
+                let iskaned = self.getIskaned(openid, self.data.kan_list); //是否已经砍过
+                let nowLength = self.getPostionOjb(money_now, money_zong); //更新进度条
+                self.kanjiaModel.showDialog();
+                self.setData({
+                  isKaned: true, //是否已经砍了
+                  money: money,
+                  nowLength: nowLength,
+                  iskaned:iskaned
+                });
+              });
+            }
+          });
+        });
+      }
     });
   },
 

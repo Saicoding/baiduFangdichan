@@ -8,7 +8,6 @@ const API_URL = 'https://xcx2.chinaplat.com/'; //接口地址
 const app = getApp(); //获取app对象
 let validate = require('../../common/validate.js');
 let time = require('../../common/time.js');
-let buttonClicked = false;
 
 Page({
 
@@ -415,8 +414,6 @@ Page({
    * 做题 
    */
   GOzuoti: function (e) {
-    if (buttonClicked) return;
-    buttonClicked = true;
     let self = this;
     let z_id = e.currentTarget.id;
 
@@ -479,8 +476,6 @@ Page({
    */
   GOAnswerWrong: function (e) {
     this.waterWave.containerTap(e);
-    if (buttonClicked) return;
-    buttonClicked = true;
     let self = this;
     let kid = self.data.zhangjie_id;
     let url = encodeURIComponent('/pages/tiku/wrong/wrong?kid=' + kid);
@@ -516,8 +511,6 @@ Page({
    */
   GOMarkExercise: function (e) {
     this.waterWave.containerTap(e);
-    if (buttonClicked) return;
-    buttonClicked = true;
     let self = this;
     let kid = self.data.zhangjie_id;
     let url = encodeURIComponent('/pages/tiku/mark/mark?kid=' + kid);
@@ -554,8 +547,6 @@ Page({
    */
   GOkaoqianmiji: function (e) {
     this.waterWave.containerTap(e);
-    if (buttonClicked) return;
-    buttonClicked = true;
     let self = this;
     let kid = self.data.zhangjie_id;
     let url = encodeURIComponent('/pages/tiku/kaoqianmiji/kaoqianmiji');
@@ -594,8 +585,6 @@ Page({
    */
   GOModelReal: function (e) {
     this.waterWave.containerTap(e);
-    if (buttonClicked) return;
-    buttonClicked = true;
     let self = this;
     let ti = e.currentTarget.dataset.ti; //题型(押题,真题)
 
@@ -619,11 +608,10 @@ Page({
    */
   onShow: function () {
     let self = this;
-    buttonClicked = false;
     let zhangjie = self.data.zhangjie;
 
     if (!self.data.loaded) return; //如果没有完成首次载入就什么都不作
-
+    
     // 得到存储答题状态
     swan.getStorage({
       key: 'user',

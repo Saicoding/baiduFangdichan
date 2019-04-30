@@ -2,7 +2,6 @@
 const API_URL = 'https://xcx2.chinaplat.com/'; //接口地址
 const app = getApp(); //获取app对象
 let time = require('../../../common/time.js');
-let buttonClicked = false; //默认还没有点击可以导航页面的按钮
 let appId = "wxf90a298a65cfaca8";
 let secret = "4bb3fe58d349718b6832c04bf462d832";
 let leftTime = 0;
@@ -136,7 +135,6 @@ Page({
     let isReLoad = self.data.isReLoad; //是否是重复登录
     let first = self.data.first; //是否是第一次渲染页面
 
-    buttonClicked = false;
     if ((isReLoad || first) && user != "" && me == 1) {
       //如果user = "" 
       app.post(API_URL, "action=KanjiaCreate&loginrandom=" + loginrandom + "&zcode=" + zcode + "&taocan=" + taocan, false, false, "").then(res1 => {

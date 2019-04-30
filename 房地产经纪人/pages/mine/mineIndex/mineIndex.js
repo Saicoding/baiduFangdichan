@@ -105,8 +105,9 @@ Page({
 
     if (p.isFold) {
       //如果是折叠状态
-      p.height = p.height * (windowWidth / 750);
-      p.foldData = animate.foldAnimation(easeInAnimation, p.height);
+      let height = p.height * (windowWidth / 750);
+      console.log(height)
+      p.foldData = animate.foldAnimation(easeInAnimation, height);
       p.isFold = false;
       let interval = setInterval(function () {
         p.angle += 6;
